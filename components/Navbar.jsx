@@ -11,7 +11,7 @@ const Navbar = () => {
           <span className='text-5xl px-1 font-custom'>iamsdas</span>
           <span className='text-4xl font-extrabold'>&gt;</span>
         </div>
-        <button
+        {/* <button
           className='md:hidden block text-3xl p-1 hover:text-gray-600 focus:outline-none'
           onClick={() => {
             setNavMenu(!navMenu);
@@ -28,7 +28,7 @@ const Navbar = () => {
           <Link href='#'>
             <a className='hover:text-gray-500'>Blogs</a>
           </Link>
-        </div>
+        </div> */}
       </div>
       <div
         className={`${
