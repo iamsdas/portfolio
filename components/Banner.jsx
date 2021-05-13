@@ -3,7 +3,7 @@ import Typical from 'react-typical';
 
 const Banner = () => {
   return (
-    <div className='h-screen flex flex-col justify-center items-center uppercase px-5 bg-gradient-to-b from-gray-800 via-gray-900 to-green-900 font-semibold text-gray-300 leading-snug'>
+    <div className='h-screen flex flex-col justify-center items-center uppercase px-5 bg-gradient-to-b from-gray-800 via-gray-900 to-green-900 font-semibold text-gray-300'>
       <div>
         <div className='text-5xl lg:text-6xl'>Hey there !!</div>
         <div className='sm:text-6xl text-5xl lg:text-7xl'>
