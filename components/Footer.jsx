@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <div className='py-6 bg-gray-900 text-gray-50 flex justify-center items-center'>
+    <div className='py-6 bg-gray-900 text-gray-50 flex justify-center items-center text-lg sm:text-xl'>
       <div>
         Made with
         <i className='fas fa-heart text-red-700 px-1' aria-hidden='true'></i>
