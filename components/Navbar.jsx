@@ -30,7 +30,7 @@ const Navbar = () => {
           </Link>
         </div> */}
       </div>
-      <div
+      {/* <div
         className={`${
           navMenu ? 'flex' : 'hidden'
         } flex-col gap-5 px-5 uppercase pb-5 items-stretch md:hidden font-medium text-2xl text-center`}>
@@ -43,7 +43,7 @@ const Navbar = () => {
         <Link href='#'>
           <a className='hover:text-gray-500'>Blogs</a>
         </Link>
-      </div>
+      </div> */}
     </div>
   );
 };

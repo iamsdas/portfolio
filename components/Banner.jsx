@@ -29,21 +29,31 @@ const Banner = () => {
             loop={Infinity}></Typical>
         </div>
         <div className='flex justify-items-start gap-6 pt-12 text-4xl'>
-          <a
-            href='https://github.com/iamsdas'
-            className='fab fa-github hover:text-gray-500'></a>
-          <a
-            href='https://gitlab.gnome.org/iamsdas'
-            className='fab fa-gitlab hover:text-gray-500'></a>
-          <a
-            href='mailto:suryashankardas.2002@gmail.com'
-            className='fa fa-envelope hover:text-gray-500'></a>
-          <a
-            href='https://linkedin.com/in/iamsdas'
-            className='fab fa-linkedin-in hover:text-gray-500'></a>
-          <a
-            href='https://twitter.com/_iamsdas'
-            className='fab fa-twitter hover:text-gray-500'></a>
+          <a href='https://github.com/iamsdas' aria-label='github'>
+            <i
+              className='fab fa-github hover:text-gray-500'
+              aria-hidden='true'></i>
+          </a>
+          <a href='https://gitlab.gnome.org/iamsdas' aria-label='gitlab'>
+            <i
+              className='fab fa-gitlab hover:text-gray-500'
+              aria-hidden='true'></i>
+          </a>
+          <a href='mailto:suryashankardas.2002@gmail.com' aria-label='email'>
+            <i
+              className='fa fa-envelope hover:text-gray-500'
+              aria-hidden='true'></i>
+          </a>
+          <a href='https://linkedin.com/in/iamsdas' aria-label='linkedin'>
+            <i
+              className='fab fa-linkedin-in hover:text-gray-500'
+              aria-hidden='true'></i>
+          </a>
+          <a href='https://twitter.com/_iamsdas' aria-label='twitter'>
+            <i
+              className='fab fa-twitter hover:text-gray-500'
+              aria-hidden='true'></i>
+          </a>
         </div>
       </div>
     </div>
