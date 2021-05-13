@@ -3,18 +3,18 @@ import Typical from 'react-typical';
 
 const Banner = () => {
   return (
-    <div className='h-screen flex flex-col justify-center items-center uppercase px-5 bg-yellow-200 text-gray-700 font-semibold'>
+    <div className='h-screen flex flex-col justify-center items-center uppercase px-5 bg-gradient-to-b from-gray-800 via-gray-900 to-green-900 font-semibold text-gray-300 leading-snug'>
       <div>
-        <div className='text-5xl'>Hey there !!</div>
-        <div className='sm:text-6xl text-5xl'>
+        <div className='text-5xl lg:text-6xl'>Hey there !!</div>
+        <div className='sm:text-6xl text-5xl lg:text-7xl'>
           I am{' '}
-          <span className='text-gray-900 font-extrabold'>Suryashankar Das</span>
+          <span className='font-extrabold text-green-200'>
+            Suryashankar Das
+          </span>
           ,
         </div>
-        <div className='text-5xl font-bold text-gray-800'>
-          Student Developer
-        </div>
-        <div className='sm:text-3xl text-2xl pt-4 text-black font-semibold font-mono'>
+        <div className='text-5xl font-bold lg:text-6xl'>Student Developer</div>
+        <div className='sm:text-3xl text-2xl pt-8 font-semibold font-mono text-gray-50'>
           <Typical
             steps={[
               'Web Developer',
@@ -28,7 +28,7 @@ const Banner = () => {
             ]}
             loop={Infinity}></Typical>
         </div>
-        <div className='flex justify-items-start gap-6 pt-8 text-4xl'>
+        <div className='flex justify-items-start gap-6 pt-12 text-4xl'>
           <a
             href='https://github.com/iamsdas'
             className='fab fa-github hover:text-gray-500'></a>
