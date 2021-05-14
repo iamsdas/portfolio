@@ -2,7 +2,7 @@ import React from 'react';
 
 const About = () => {
   return (
-    <div className='py-8 flex md:flex-row flex-col-reverse bg-gray-300 items-center'>
+    <div className='py-8 flex md:flex-row flex-col-reverse bg-gray-300 items-center justify-around'>
       <div className='text-gray-700 md:w-1/2 px-5'>
         <h1 className='text-4xl pb-4 font-bold uppercase'>About Me</h1>
         <div className='leading-relaxed lg:text-2xl sm:text-xl text-md text-left text-gray-900'>
@@ -14,7 +14,7 @@ const About = () => {
           contributor and am a part of my college's open source society.
         </div>
       </div>
-      <div className='md:w-1/2 sm:w-4/5 xs:w-full pb-10 px-6 md:pb-0'>
+      <div className='lg:w-2/5 md:w-1/2 sm:w-4/5 xs:w-full pb-10 px-3 md:pb-0'>
         <img src='/dev.svg' alt='dev' className='object-cover h-full w-full' />
       </div>
     </div>
