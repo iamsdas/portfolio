@@ -1,5 +1,11 @@
 import React from 'react';
 import Typical from 'react-typical';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faGitlab } from '@fortawesome/free-brands-svg-icons';
+import { faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Banner = () => {
   return (
@@ -33,31 +39,41 @@ const Banner = () => {
               ]}
               loop={Infinity}></Typical>
           </div>
-          <div className='flex justify-items-start gap-6 pt-12 text-4xl'>
+          <div className='flex justify-items-start gap-6 pt-12'>
             <a href='https://github.com/iamsdas' aria-label='github'>
-              <i
-                className='fab fa-github hover:text-green-300'
-                aria-hidden='true'></i>
+              <FontAwesomeIcon
+                icon={faGithub}
+                className='hover:text-green-300 h-9 w-9'
+                aria-hidden='true'
+              />
             </a>
             <a href='https://gitlab.gnome.org/iamsdas' aria-label='gitlab'>
-              <i
-                className='fab fa-gitlab hover:text-green-300'
-                aria-hidden='true'></i>
+              <FontAwesomeIcon
+                icon={faGitlab}
+                className='hover:text-green-300 h-9 w-9'
+                aria-hidden='true'
+              />
             </a>
             <a href='mailto:suryashankardas.2002@gmail.com' aria-label='email'>
-              <i
-                className='fa fa-envelope hover:text-green-300'
-                aria-hidden='true'></i>
+              <FontAwesomeIcon
+                icon={faEnvelope}
+                className='hover:text-green-300 h-9 w-9'
+                aria-hidden='true'
+              />
             </a>
             <a href='https://linkedin.com/in/iamsdas' aria-label='linkedin'>
-              <i
-                className='fab fa-linkedin-in hover:text-green-300'
-                aria-hidden='true'></i>
+              <FontAwesomeIcon
+                icon={faLinkedinIn}
+                className='hover:text-green-300 h-9 w-9'
+                aria-hidden='true'
+              />
             </a>
             <a href='https://twitter.com/_iamsdas' aria-label='twitter'>
-              <i
-                className='fab fa-twitter hover:text-green-300'
-                aria-hidden='true'></i>
+              <FontAwesomeIcon
+                icon={faTwitter}
+                className='hover:text-green-300 h-9 w-9'
+                aria-hidden='true'
+              />
             </a>
           </div>
         </div>

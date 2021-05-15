@@ -6,18 +6,14 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <meta charSet='utf-8' />
-        <meta name='viewport' content='initial-scale=1.0, width=device-width' />
-        <meta httpEquiv='X-UA-Compatible' content='IE=edge' />
-        <meta
-          name='description'
-          content='This is the personal portfolio website of Suryashankar Das (iamsdas)'
+        <link
+          href='https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap'
+          rel='stylesheet'
         />
-        <meta
-          name='google-site-verification'
-          content='nhvnz7qvhSlwPw0IQj0cV7JXdsmpbiJ_nvbFz-N-a90'
+        <link
+          href='https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap'
+          rel='stylesheet'
         />
-        <title>Suryashankar Das (iamsdas)</title>
       </Head>
       <Banner />
       <About />
