@@ -9,7 +9,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Banner = () => {
   return (
-    <div className='h-screen bg-gradient-to-b from-gray-800 via-gray-900 to-green-900 font-semibold uppercase text-gray-100'>
+    <section className='h-screen bg-gradient-to-b from-gray-800 via-gray-900 to-green-900 font-semibold uppercase text-gray-100'>
       <div
         className='h-full heropattern-circuitboard-green-900 flex
       flex-col justify-center items-center px-5'>
@@ -78,7 +78,7 @@ const Banner = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -4,7 +4,7 @@ import Link from 'next/link';
 const Navbar = () => {
   const [navMenu, setNavMenu] = useState(false);
   return (
-    <div className='fixed inset-x-0 bg-white bg-opacity-80 text-gray-900'>
+    <section className='fixed inset-x-0 bg-white bg-opacity-80 text-gray-900 z-50'>
       <div className='flex justify-between px-3 py-3 items-center'>
         <div>
           <span className='text-4xl font-extrabold'>&lt;</span>
@@ -44,7 +44,7 @@ const Navbar = () => {
           <a className='hover:text-gray-500'>Blogs</a>
         </Link>
       </div> */}
-    </div>
+    </section>
   );
 };
 
