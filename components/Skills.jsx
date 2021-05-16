@@ -25,7 +25,13 @@ const Skills = () => {
             className='rounded-full p-4 md:p-5 w-24 sm:w-32 lg:w-36 h-24 sm:h-32 lg:h-36 bg-white justify-center items-center flex shadow-xl'
             key={index}>
             <span className='relative w-full h-full'>
-              <Image src={`/images/${name}.svg`} alt={name} layout='fill' />
+              <Image
+                src={`/images/${name}.svg`}
+                alt={name}
+                layout='fill'
+                unoptimized='true'
+                objectFit='scale-down'
+              />
             </span>
           </div>
         ))}
