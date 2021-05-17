@@ -16,7 +16,7 @@ const Skills = () => {
   ];
   return (
     <section className='bg-gray-300 p-3 lg:px-10 pb-10 text-center'>
-      <h1 className='text-4xl pb-4 font-bold uppercase text-gray-700 pb-8'>
+      <h1 className='text-4xl pb-6 font-bold uppercase text-gray-700'>
         Skills and Tech Stack
       </h1>
       <div className='flex flex-wrap justify-center items-center gap-6 sm:gap-10 md:gap-12'>
