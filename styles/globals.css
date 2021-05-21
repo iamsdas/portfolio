@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: 'Roboto Mono';
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+    src: url(/fonts/RobotoMono-VariableFont_wght.ttf);
+  }
+  @font-face {
+    font-family: 'Sacramento';
+    font-weight: 400;
+    font-style: normal;
+    font-display: fallback;
+    src: url(/fonts/Sacramento-Regular.ttf);
+  }
+  @font-face {
+    font-family: 'Fira Sans';
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+    src: url(/fonts/FiraSans-Regular.ttf);
+  }
+}
