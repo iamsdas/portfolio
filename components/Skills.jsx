@@ -22,11 +22,12 @@ const Skills = () => {
       <div className='flex flex-wrap justify-center items-center gap-6 sm:gap-10 md:gap-12'>
         {images.map((name, index) => (
           <div
-            className='rounded-full p-4 md:p-5 w-24 sm:w-32 lg:w-36 h-24 sm:h-32 lg:h-36 bg-white justify-center items-center flex shadow-xl'
+            className='rounded-full p-4 md:p-5 w-24 sm:w-32 lg:w-36 h-24 sm:h-32 lg:h-36 bg-gray-50 justify-center items-center flex shadow-xl'
             key={index}>
-            <span className='relative w-full h-full'>
+            <span className='relative w-full h-full filter hover:blur'>
               <Image
                 src={`/images/${name}.svg`}
+                title={name}
                 alt={name}
                 layout='fill'
                 unoptimized='true'
