@@ -10,7 +10,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 const Banner = () => {
   const contactInfo = [
     { name: 'github', url: 'https://github.com/iamsdas', icon: faGithub },
-    { name: 'gitlab', url: 'https://github.com/iamsdas', icon: faGitlab },
+    { name: 'gitlab', url: 'https://gitlab.gnome.org/iamsdas', icon: faGitlab },
     {
       name: 'email',
       url: 'mailto:suryashankardas.2002@gmail.com',

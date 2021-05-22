@@ -18,15 +18,16 @@ const Skills = () => {
     { name: 'docker', url: 'https://www.docker.com/' },
   ];
   return (
-    <section className='bg-gray-200 p-3 lg:px-10 pb-10 text-center space-y-4'>
-      <h1 className='text-4xl pb-4 font-bold uppercase text-gray-700'>
+    <section className='bg-gray-200 p-3 lg:px-10 pb-10 space-y-4'>
+      <h1 className='text-4xl pb-1 font-bold uppercase text-gray-700 text-center'>
         Skills and Tech Stack
       </h1>
-      <span className='lg:text-2xl text-xl text-gray-900 font-para'>
+      <div className='lg:text-2xl text-xl text-gray-900 font-para leading-relaxed text-left md:text-center'>
         Currently using Next.js, Prisma and Tailwind for full stack web
         development and solidity for making decentralized apps on the ethereum
-        network. Here is a list of some things that I have learnt in the past:
-      </span>
+        network. Here is a list of some intersting things that I have learnt in
+        the past:
+      </div>
       <div className='flex flex-wrap justify-center items-center gap-6 sm:gap-10 md:gap-12'>
         {skills.map(({ name, url }, index) => (
           <div

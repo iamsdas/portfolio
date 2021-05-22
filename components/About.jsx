@@ -9,10 +9,10 @@ const About = () => {
         </h1>
         <div className='leading-relaxed lg:text-2xl text-xl text-left text-gray-900 font-para'>
           I am a college student majoring in computer science and am a tech
-          enthusiast. I mostly have experience in full-stack web development,
+          enthusiast. I mostly have experience in full stack web development,
           app development using Flutter, and artificial intelligence using
           TensorFlow. I love exploring the latest technologies and am currently
-          looking into blockchain. I am also an open source contributor and am a
+          looking into blockchain. I am also an active open source contributor and am a
           part of my college's open source society.
         </div>
       </div>
