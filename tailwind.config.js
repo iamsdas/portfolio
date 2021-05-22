@@ -1,4 +1,5 @@
 const heropatterns = require('tailwindcss-hero-patterns/src/patterns');
+const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
   mode: 'jit',
@@ -6,14 +7,14 @@ module.exports = {
   theme: {
     fontFamily: {
       custom: ['Sacramento'],
-      mono: ['Roboto Mono', 'ui-monospace', 'monospace'],
-      para: ['Fira Sans'],
+      para: ['Fira Sans', ...defaultTheme.fontFamily.sans],
+      mono: [...defaultTheme.fontFamily.mono],
     },
     heroPatterns: {
       circuitboard: heropatterns.circuitboard,
     },
     heroPatternsShades: ['900'],
-    heroPatternsColors: ['green'],
+    heroPatternsColors: ['gray'],
     extend: {},
   },
   variants: {

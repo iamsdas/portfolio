@@ -5,7 +5,7 @@ const Navbar = () => {
   const [navMenu, setNavMenu] = useState(false);
   return (
     <section className='fixed inset-x-0 bg-white bg-opacity-80 text-gray-900 z-50'>
-      <div className='flex justify-between px-3 py-3 items-center'>
+      <div className='flex justify-between px-3 py-2 sm:py-1 items-center'>
         <div>
           <span className='text-4xl font-extrabold'>&lt;</span>
           <span className='text-5xl px-1 font-custom'>iamsdas</span>

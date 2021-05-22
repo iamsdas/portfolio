@@ -21,6 +21,16 @@ const Layout = ({ children }) => {
           name='google-site-verification'
           content='nhvnz7qvhSlwPw0IQj0cV7JXdsmpbiJ_nvbFz-N-a90'
         />
+        {/* Fonts */}
+        <link
+          rel='preconnect'
+          href='https://fonts.gstatic.com'
+          crossOrigin='anonymous'
+        />
+        <link
+          href='https://fonts.googleapis.com/css2?family=Sacramento&display=fallback'
+          rel='stylesheet'
+        />
       </Head>
       <Navbar />
       {children}
