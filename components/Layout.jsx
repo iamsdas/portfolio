@@ -31,6 +31,10 @@ const Layout = ({ children }) => {
           href='https://fonts.googleapis.com/css2?family=Sacramento&display=fallback'
           rel='stylesheet'
         />
+        <link
+          href='https://fonts.googleapis.com/css2?family=Poppins&display=swap'
+          rel='stylesheet'
+        />
       </Head>
       <Navbar />
       {children}

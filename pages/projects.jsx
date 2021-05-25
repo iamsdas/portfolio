@@ -8,7 +8,7 @@ const projects = () => {
       description:
         'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut, atque, quia dolore velit voluptatum exercitationem tenetur dignissimos voluptates hic odit ducimus quibusdam quasi doloremque sequi eveniet odio omnis ipsa eaque.',
       stack: 'Vue.js, Node.js, Socket.io',
-      url: '#',
+      url: 'https://github.com/iamsdas/whiteboard',
       image: '/whiteboard.png',
     },
     {
@@ -24,7 +24,7 @@ const projects = () => {
       description:
         'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut, atque, quia dolore velit voluptatum exercitationem tenetur dignissimos voluptates hic odit ducimus quibusdam quasi doloremque sequi eveniet odio omnis ipsa eaque.',
       stack: 'Flask, Vue.js, Bootstrap, Docker, Swagger-UI',
-      url: 'https://x-meme-frontend.netlify.app/',
+      url: 'https://github.com/iamsdas/xmeme-backend',
       image: '/xmeme.png',
     },
     {
@@ -46,7 +46,7 @@ const projects = () => {
           className='text-yellow-400 pl-1 hover:text-yellow-500'>
           here
         </a>
-        .<p>Click an image to go to the project</p>
+        .<p>Click an image to check out the project</p>
       </div>
       <div className='space-y-8 pb-8 flex flex-col justify-around items-center'>
         {projects.map(({ name, description, stack, image, url }, index) => (
@@ -67,7 +67,7 @@ const projects = () => {
                 </div>
               </div>
             </a>
-            <div className='space-y-6 w-full md:w-3/5 p-4 self-center'>
+            <div className='space-y-6 w-full md:w-3/5 p-4 self-center leading-nones'>
               <h1 className='text-3xl font-bold text-gray-100 group-hover:text-gray-50'>
                 {name}
               </h1>

@@ -7,13 +7,13 @@ const About = () => {
         <h1 className='text-4xl pb-4 font-bold uppercase text-center'>
           About Me
         </h1>
-        <div className='leading-relaxed lg:text-2xl text-xl text-left text-gray-900 font-para'>
+        <div className='leading-relaxed lg:text-2xl text-xl text-left sm:text-justify text-gray-900 font-para'>
           I am a college student majoring in computer science and am a tech
           enthusiast. I mostly have experience in full stack web development,
           app development using Flutter, and artificial intelligence using
           TensorFlow. I love exploring the latest technologies and am currently
-          looking into blockchain. I am also an active open source contributor and am a
-          part of my college's open source society.
+          looking into blockchain. I am also an active open source contributor
+          and am a part of my college's open source society.
         </div>
       </div>
       <div className='lg:w-2/5 md:w-1/2 sm:w-4/5 w-full pb-10 px-3 md:pb-0'>

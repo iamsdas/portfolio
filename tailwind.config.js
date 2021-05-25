@@ -7,7 +7,7 @@ module.exports = {
   theme: {
     fontFamily: {
       custom: ['Sacramento'],
-      para: ['Fira Sans', ...defaultTheme.fontFamily.sans],
+      para: ['Poppins', ...defaultTheme.fontFamily.sans],
       mono: [...defaultTheme.fontFamily.mono],
     },
     heroPatterns: {

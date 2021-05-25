@@ -18,11 +18,11 @@ const Skills = () => {
     { name: 'docker', url: 'https://www.docker.com/' },
   ];
   return (
-    <section className='bg-gray-200 p-3 lg:px-10 pb-10 space-y-4'>
+    <section className='bg-gray-200 p-5 lg:px-10 pb-10 space-y-4'>
       <h1 className='text-4xl pb-1 font-bold uppercase text-gray-700 text-center'>
         Skills and Tech Stack
       </h1>
-      <div className='lg:text-2xl text-xl text-gray-900 font-para leading-relaxed text-left md:text-center'>
+      <div className='lg:text-2xl text-xl text-gray-900 font-para leading-relaxed text-left sm:text-center'>
         Currently using Next.js, Prisma and Tailwind for full stack web
         development and solidity for making decentralized apps on the ethereum
         network. Here is a list of some intersting things that I have learnt in
