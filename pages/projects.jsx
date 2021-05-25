@@ -5,33 +5,38 @@ const projects = () => {
   const projects = [
     {
       name: 'Collaborative Whiteboard',
-      description:
-        'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut, atque, quia dolore velit voluptatum exercitationem tenetur dignissimos voluptates hic odit ducimus quibusdam quasi doloremque sequi eveniet odio omnis ipsa eaque.',
+      description: `This is a personal project in which I made a simple collborative
+      drawing whiteboard webapp using Vue.js and Socket.io in which users can enter
+      a unique room code and collaborate with each others.`,
       stack: 'Vue.js, Node.js, Socket.io',
       url: 'https://github.com/iamsdas/whiteboard',
       image: '/whiteboard.png',
     },
     {
       name: 'Text Compression',
-      description:
-        'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut, atque, quia dolore velit voluptatum exercitationem tenetur dignissimos voluptates hic odit ducimus quibusdam quasi doloremque sequi eveniet odio omnis ipsa eaque.',
+      description: `This is a class project in which I made an interactive CLI utility
+      for lossless text compression using an optimized version of the LZW algorithm in C++.`,
       stack: 'C++, LZW',
       url: 'https://github.com/iamsdas/Text-Compression',
       image: '/txtcomp.png',
     },
     {
       name: 'Xmeme',
-      description:
-        'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut, atque, quia dolore velit voluptatum exercitationem tenetur dignissimos voluptates hic odit ducimus quibusdam quasi doloremque sequi eveniet odio omnis ipsa eaque.',
+      description: `This is a full stack project I built while I was initially
+      exploring REST APIs. It has a Vue.js frontend which shows a list of memes
+      served from a Flask backend with an option to add, delete and modify them.
+      The backend also exposes it API documentation using Swagger-UI.`,
       stack: 'Flask, Vue.js, Bootstrap, Docker, Swagger-UI',
       url: 'https://github.com/iamsdas/xmeme-backend',
       image: '/xmeme.png',
     },
     {
       name: 'Gesture Calculator',
-      description:
-        'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut, atque, quia dolore velit voluptatum exercitationem tenetur dignissimos voluptates hic odit ducimus quibusdam quasi doloremque sequi eveniet odio omnis ipsa eaque.',
-      stack: 'Flutter, TensorFlow, TFlite, CNN',
+      description: `This is a personal project in which I built a calculator
+      applicaiton using FLutter which takes in input via touch based gestures
+      which are classified into standard standart numericals and arithmetic
+      symbols using TensorFlow (CNNs)`,
+      stack: 'Flutter, TensorFlow, TFlite',
       url: 'https://github.com/iamsdas/Flutter-Gesture-Calculator',
       image: '/calculator.png',
     },
@@ -40,13 +45,8 @@ const projects = () => {
   return (
     <section className='bg-gray-700 text-gray-50 px-4 sm:px-8 md:px-16'>
       <div className='pt-24 pb-8 font-para text-xl text-center'>
-        This is a showcase of some of my projects. For a complete list click
-        <a
-          href='https://github.com/iamsdas'
-          className='text-yellow-400 pl-1 hover:text-yellow-500'>
-          here
-        </a>
-        .<p>Click an image to check out the project</p>
+        This is a showcase of some of my projects. Click the images to get
+        further details about it.
       </div>
       <div className='space-y-8 pb-8 flex flex-col justify-around items-center'>
         {projects.map(({ name, description, stack, image, url }, index) => (
@@ -67,12 +67,12 @@ const projects = () => {
                 </div>
               </div>
             </a>
-            <div className='space-y-6 w-full md:w-3/5 p-4 self-center leading-nones'>
-              <h1 className='text-3xl font-bold text-gray-100 group-hover:text-gray-50'>
+            <div className='space-y-6 w-full md:w-3/5 p-4 self-center leading-snug'>
+              <h1 className='text-2xl font-bold text-gray-100 group-hover:text-gray-50'>
                 {name}
               </h1>
-              <p className='text-xl text-gray-100'>{description}</p>
-              <p className='text-yellow-400'>{stack}</p>
+              <p className='text-lg font-para text-gray-100'>{description}</p>
+              <p className='text-yellow-400 text-lg'>{stack}</p>
             </div>
           </div>
         ))}

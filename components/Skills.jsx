@@ -22,11 +22,11 @@ const Skills = () => {
       <h1 className='text-4xl pb-1 font-bold uppercase text-gray-700 text-center'>
         Skills and Tech Stack
       </h1>
-      <div className='lg:text-2xl text-xl text-gray-900 font-para leading-relaxed text-left sm:text-center'>
+      <div className='text-xl text-gray-900 font-para leading-relaxed text-left sm:text-center pb-5'>
         Currently using Next.js, Prisma and Tailwind for full stack web
         development and solidity for making decentralized apps on the ethereum
-        network. Here is a list of some intersting things that I have learnt in
-        the past:
+        network. Here are some intersting things that I am currently learning or
+        have learnt in the past:
       </div>
       <div className='flex flex-wrap justify-center items-center gap-6 sm:gap-10 md:gap-12'>
         {skills.map(({ name, url }, index) => (
