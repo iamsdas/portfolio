@@ -40,6 +40,25 @@ const projects = () => {
       url: 'https://github.com/iamsdas/Flutter-Gesture-Calculator',
       image: '/calculator.png',
     },
+    {
+      name: 'Apoyo',
+      description: `This is a project built during my first hackathon. In this
+      project we built a Flutter app that gives suggestions to improve the mental
+      health. It uses Firebase for backend storage and for authentication.`,
+      stack: 'Flutter, Firebase',
+      url: 'https://devpost.com/software/apoyo-gxj0fe',
+      image: '/apoyo.png',
+    },
+    {
+      name: 'Static Pastebin Clone',
+      description: `This is a personal project in which I have made a static
+      pastebin clone using simple HTML, CSS and JavaScript. It encodes and
+      saves the user provided string in the URL which is then shareable. It
+      also provides some minimal syntax highlighting using Prism.js`,
+      stack: 'HTML, CSS, Prism.js, ULZSS',
+      url: 'https://github.com/iamsdas/Flutter-Gesture-Calculator',
+      image: '/pastebin.png',
+    },
   ];
 
   return (
@@ -60,6 +79,7 @@ const projects = () => {
                 <div className='aspect-w-1 aspect-h-1 relative flex-1'>
                   <Image
                     src={image}
+                    alt={name}
                     layout='fill'
                     objectFit='scale-down'
                     unoptimized='true'
