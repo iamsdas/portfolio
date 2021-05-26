@@ -18,7 +18,7 @@ const About = () => {
       </div>
       <div className='lg:w-2/5 md:w-1/2 sm:w-4/5 w-full pb-10 px-3 md:pb-0'>
         <img
-          src='/dev.svg'
+          src='/images/misc/dev.svg'
           alt='dev'
           className='object-cover h-full w-full'
           loading='lazy'

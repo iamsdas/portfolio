@@ -37,7 +37,7 @@ const Skills = () => {
             key={index}>
             <a href={url} className='relative w-full h-full'>
               <Image
-                src={`/images/${name}.svg`}
+                src={`/images/skills/${name}.svg`}
                 title={name}
                 alt={name}
                 layout='fill'

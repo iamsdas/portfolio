@@ -10,7 +10,7 @@ const projects = () => {
       a unique room code and collaborate with each others.`,
       stack: 'Vue.js, Node.js, Socket.io',
       url: 'https://github.com/iamsdas/whiteboard',
-      image: '/whiteboard.png',
+      image: 'whiteboard.png',
     },
     {
       name: 'Text Compression',
@@ -18,7 +18,7 @@ const projects = () => {
       for lossless text compression using an optimized version of the LZW algorithm in C++.`,
       stack: 'C++, LZW',
       url: 'https://github.com/iamsdas/Text-Compression',
-      image: '/txtcomp.png',
+      image: 'txtcomp.png',
     },
     {
       name: 'Xmeme',
@@ -28,7 +28,7 @@ const projects = () => {
       The backend also exposes it API documentation using Swagger-UI.`,
       stack: 'Flask, Vue.js, Bootstrap, Docker, Swagger-UI',
       url: 'https://github.com/iamsdas/xmeme-backend',
-      image: '/xmeme.png',
+      image: 'xmeme.png',
     },
     {
       name: 'Gesture Calculator',
@@ -38,7 +38,7 @@ const projects = () => {
       symbols using TensorFlow (CNNs)`,
       stack: 'Flutter, TensorFlow, TFlite',
       url: 'https://github.com/iamsdas/Flutter-Gesture-Calculator',
-      image: '/calculator.png',
+      image: 'calculator.png',
     },
     {
       name: 'Apoyo',
@@ -47,7 +47,7 @@ const projects = () => {
       health. It uses Firebase for backend storage and for authentication.`,
       stack: 'Flutter, Firebase',
       url: 'https://devpost.com/software/apoyo-gxj0fe',
-      image: '/apoyo.png',
+      image: 'apoyo.png',
     },
     {
       name: 'Static Pastebin Clone',
@@ -57,7 +57,7 @@ const projects = () => {
       also provides some minimal syntax highlighting using Prism.js`,
       stack: 'HTML, CSS, Prism.js, ULZSS',
       url: 'https://github.com/iamsdas/Flutter-Gesture-Calculator',
-      image: '/pastebin.png',
+      image: 'pastebin.png',
     },
   ];
 
@@ -78,7 +78,7 @@ const projects = () => {
               <div className='filter group-hover:contrast-100 w-full contrast-75 hover:blur p-4'>
                 <div className='aspect-w-1 aspect-h-1 relative flex-1'>
                   <Image
-                    src={image}
+                    src={`/images/projects/${image}`}
                     alt={name}
                     layout='fill'
                     objectFit='scale-down'
