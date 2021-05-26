@@ -15,6 +15,7 @@ const Navbar = () => {
         </div>
         <button
           className='md:hidden block p-1 focus:outline-none'
+          aria-label='dropdown button'
           onClick={() => {
             setNavMenu(!navMenu);
           }}>
@@ -26,13 +27,13 @@ const Navbar = () => {
         </button>
         <div className='md:flex gap-3 uppercase hidden text-xl font-medium'>
           <Link href='/'>
-            <a className='hover:text-yellow-500'>Home</a>
+            <a className='hover:text-yellow-600'>Home</a>
           </Link>
           <Link href='/projects'>
-            <a className='hover:text-yellow-500'>Projects</a>
+            <a className='hover:text-yellow-600'>Projects</a>
           </Link>
           {/* <Link href='#'>
-            <a className='hover:text-yellow-500'>Blogs</a>
+            <a className='hover:text-yellow-600'>Blogs</a>
           </Link> */}
         </div>
       </div>
@@ -41,13 +42,13 @@ const Navbar = () => {
           navMenu ? 'flex' : 'hidden'
         } flex-col gap-5 px-5 uppercase pb-5 items-stretch md:hidden font-medium text-2xl text-center`}>
         <Link href='/'>
-          <a className='hover:text-yellow-500'>Home</a>
+          <a className='hover:text-yellow-600'>Home</a>
         </Link>
         <Link href='/projects'>
-          <a className='hover:text-yellow-500'>Projects</a>
+          <a className='hover:text-yellow-600'>Projects</a>
         </Link>
         {/* <Link href='#'>
-          <a className='hover:text-yellow-500'>Blogs</a>
+          <a className='hover:text-yellow-600'>Blogs</a>
         </Link> */}
       </div>
     </section>
