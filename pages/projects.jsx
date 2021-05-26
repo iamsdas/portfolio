@@ -25,7 +25,7 @@ const projects = () => {
       description: `This is a full stack project I built while I was initially
       exploring REST APIs. It has a Vue.js frontend which shows a list of memes
       served from a Flask backend with an option to add, delete and modify them.
-      The backend also exposes it API documentation using Swagger-UI.`,
+      The backend also exposes the API documentation using Swagger-UI.`,
       stack: 'Flask, Vue.js, Bootstrap, Docker, Swagger-UI',
       url: 'https://github.com/iamsdas/xmeme-backend',
       image: 'xmeme',
@@ -33,7 +33,7 @@ const projects = () => {
     {
       name: 'Gesture Calculator',
       description: `This is a personal project in which I built a calculator
-      applicaiton using FLutter which takes in input via touch based gestures
+      applicaiton using Flutter which takes in input via touch based gestures
       which are classified into standard standart numericals and arithmetic
       symbols using TensorFlow (CNNs)`,
       stack: 'Flutter, TensorFlow, TFlite',
@@ -44,7 +44,8 @@ const projects = () => {
       name: 'Apoyo',
       description: `This is a project built during my first hackathon. In this
       project we built a Flutter app that gives suggestions to improve the mental
-      health. It uses Firebase for backend storage and for authentication.`,
+      health based on the user's mood. It uses Firebase for backend storage and
+      for authentication.`,
       stack: 'Flutter, Firebase',
       url: 'https://devpost.com/software/apoyo-gxj0fe',
       image: 'apoyo',
