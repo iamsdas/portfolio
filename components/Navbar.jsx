@@ -28,7 +28,7 @@ const Navbar = () => {
             aria-hidden='true'
           />
         </button>
-        <div className='md:flex gap-3 hidden text-xl text-gray-800'>
+        <div className='md:flex gap-3 hidden text-xl text-gray-900'>
           <Link href='/'>
             <a className='hover:text-yellow-600'>Home</a>
           </Link>

@@ -26,7 +26,7 @@ const Banner = () => {
   return (
     <section
       className='min-h-screen bg-gradient-to-br from-gray-800 via-gray-700 to-gray-800
-      font-semibold uppercase text-gray-50 text-center sm:text-left'>
+      font-medium uppercase text-gray-50 text-center sm:text-left'>
       <div
         className='min-h-screen heropattern-circuitboard-gray-900 flex
         flex-col justify-center items-center px-5'>
@@ -36,11 +36,11 @@ const Banner = () => {
             I am{' '}
             <span className='font-bold text-yellow-400'>Suryashankar Das</span>,
           </div>
-          <div className='text-5xl font-bold lg:text-6xl'>
-            Student Developer
+          <div className='text-5xl font-semibold lg:text-6xl'>
+            A Student Developer
           </div>
-          <div className='text-4xl lg:text-5xl pt-8 font-normal font-mono text-gray-100'>
-            I like
+          <div className='text-4xl lg:text-5xl pt-8 font-thin font-mono text-white'>
+            Interested in
             <Typical
               steps={[
                 'Web Development',
@@ -55,12 +55,12 @@ const Banner = () => {
               loop={Infinity}
             />
           </div>
-          <div className='flex sm:justify-start items-center gap-6 sm:gap-8 justify-center pt-12 text-4xl text-yellow-400 pb-2'>
+          <div className='flex sm:justify-start items-center gap-6 sm:gap-8 justify-center pt-12 text-4xl pb-2'>
             {contactInfo.map(({ name, url, icon }, index) => (
               <a href={url} aria-label={name} key={index}>
                 <FontAwesomeIcon
                   icon={icon}
-                  className='hover:text-yellow-600 w-9 h-9'
+                  className='hover:text-yellow-400 w-9 h-9'
                   aria-hidden='true'
                 />
               </a>
