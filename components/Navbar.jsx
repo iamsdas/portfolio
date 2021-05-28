@@ -28,7 +28,7 @@ const Navbar = () => {
             aria-hidden='true'
           />
         </button>
-        <div className='md:flex gap-3 hidden text-xl text-gray-900'>
+        <div className='md:flex gap-3 hidden text-xl'>
           <Link href='/'>
             <a className='hover:text-yellow-600'>Home</a>
           </Link>
@@ -43,7 +43,7 @@ const Navbar = () => {
       <div
         className={`${
           navMenu ? 'flex' : 'hidden'
-        } flex-col gap-3 px-5 pb-5 items-stretch md:hidden text-gray-800 text-2xl text-center`}>
+        } flex-col gap-3 px-5 pb-5 items-stretch md:hidden text-2xl text-center`}>
         <Link href='/'>
           <a
             className='hover:text-yellow-600 border-gray-700 hover:border-yellow-500 border-t-2 pt-2'

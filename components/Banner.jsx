@@ -34,12 +34,12 @@ const Banner = () => {
           <div className='text-5xl lg:text-6xl'>Hey there !!</div>
           <div className='sm:text-6xl text-5xl lg:text-7xl'>
             I am{' '}
-            <span className='font-bold text-yellow-400'>Suryashankar Das</span>,
+            <span className='font-bold text-yellow-300'>Suryashankar Das</span>,
           </div>
-          <div className='text-5xl font-semibold lg:text-6xl'>
+          <div className='text-5xl lg:text-6xl'>
             A Student Developer
           </div>
-          <div className='text-4xl lg:text-5xl pt-8 font-thin font-mono text-white'>
+          <div className='text-3xl lg:text-4xl pt-8 font-thin font-mono text-gray-200'>
             Interested in
             <Typical
               steps={[
@@ -60,7 +60,7 @@ const Banner = () => {
               <a href={url} aria-label={name} key={index}>
                 <FontAwesomeIcon
                   icon={icon}
-                  className='hover:text-yellow-400 w-9 h-9'
+                  className='hover:text-yellow-300 w-9 h-9'
                   aria-hidden='true'
                 />
               </a>
