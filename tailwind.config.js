@@ -1,4 +1,3 @@
-const heropatterns = require('tailwindcss-hero-patterns/src/patterns');
 const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
@@ -10,18 +9,12 @@ module.exports = {
       para: ['Poppins', ...defaultTheme.fontFamily.sans],
       mono: [...defaultTheme.fontFamily.mono],
     },
-    heroPatterns: {
-      circuitboard: heropatterns.circuitboard,
-    },
-    heroPatternsShades: ['900'],
-    heroPatternsColors: ['gray'],
     extend: {},
   },
   variants: {
     extend: {},
   },
   plugins: [
-    require('tailwindcss-hero-patterns'),
     require('@tailwindcss/aspect-ratio'),
   ],
 };

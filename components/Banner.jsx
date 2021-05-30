@@ -25,21 +25,18 @@ const Banner = () => {
   ];
   return (
     <section
-      className='min-h-screen bg-gradient-to-br from-gray-800 via-gray-700 to-gray-800
+      className='min-h-screen bg-gradient-to-br from-gray-900 via-gray-700 to-gray-900
       font-medium uppercase text-gray-50 text-center sm:text-left'>
       <div
-        className='min-h-screen heropattern-circuitboard-gray-900 flex
-        flex-col justify-center items-center px-5'>
+        className='min-h-screen flex flex-col-reverse justify-center items-center px-5'>
         <div>
           <div className='text-5xl lg:text-6xl'>Hey there !!</div>
           <div className='sm:text-6xl text-5xl lg:text-7xl'>
             I am{' '}
             <span className='font-bold text-yellow-300'>Suryashankar Das</span>,
           </div>
-          <div className='text-5xl lg:text-6xl'>
-            A Student Developer
-          </div>
-          <div className='text-3xl lg:text-4xl pt-8 font-thin font-mono text-gray-200'>
+          <div className='text-5xl lg:text-6xl'>A Student Developer</div>
+          <div className='text-3xl lg:text-4xl pt-8 font-thin font-mono text-gray-300'>
             Interested in
             <Typical
               steps={[
