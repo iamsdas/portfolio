@@ -27,8 +27,7 @@ const Banner = () => {
     <section
       className='min-h-screen bg-gradient-to-br from-gray-900 via-gray-700 to-gray-900
       font-medium uppercase text-gray-50 text-center sm:text-left'>
-      <div
-        className='min-h-screen flex flex-col-reverse justify-center items-center px-5'>
+      <div className='min-h-screen flex justify-center items-center px-5'>
         <div>
           <div className='text-5xl lg:text-6xl'>Hey there !!</div>
           <div className='sm:text-6xl text-5xl lg:text-7xl'>
