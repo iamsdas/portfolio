@@ -2,20 +2,20 @@ import React from 'react';
 import Image from 'next/image';
 
 const projects = ({ projects }) => (
-  <section className='bg-gray-700 text-gray-50 px-4 sm:px-8 md:px-16'>
-    <div className='pt-24 pb-8 font-para text-xl text-center'>
-      This is a showcase of some of my projects. Click the images to get further
-      details about it.
+  <section className='bg-trueGray-900 text-trueGray-300 px-4 sm:px-8 md:px-16'>
+    <div className='pt-24 pb-8 font-para text-xl text-center sm:w-3/5 md:w-5/6 lg:w-3/5 mx-auto'>
+      This is a showcase of some of my projects. Click an image to get further
+      details about the project.
     </div>
     <div className='space-y-8 pb-8 flex flex-col justify-around items-center'>
       {projects.map(({ name, description, stack, image, url }, index) => (
         <div
-          className='rounded-xl bg-gray-800 flex flex-col md:flex-row items-stretch w-full sm:w-3/5 md:w-5/6 lg:w-3/5 group'
+          className='bg-trueGray-800 flex flex-col md:flex-row items-stretch justify-center w-full sm:w-3/5 md:w-5/6 lg:w-3/5'
           key={index}>
           <a
             href={url}
-            className='w-full md:w-2/5 bg-gray-900 rounded-t-xl sm:rounded-tr-none sm:rounded-l-xl flex justify-center items-center'>
-            <div className='filter group-hover:contrast-100 w-full contrast-75 hover:blur p-4'>
+            className='w-full md:w-2/5 flex justify-center items-center p-2 bg-warmGray-700'>
+            <div className='filter w-full hover:blur'>
               <div className='aspect-w-1 aspect-h-1 relative flex-1'>
                 <Image
                   src={`/images/projects/${image}.webp`}
@@ -28,11 +28,11 @@ const projects = ({ projects }) => (
             </div>
           </a>
           <div className='space-y-6 w-full md:w-3/5 p-4 self-center leading-snug'>
-            <h1 className='text-2xl font-bold text-gray-100 group-hover:text-gray-50'>
+            <h1 className='text-2xl font-bold text-trueGray-100 group-hover:text-gray-50'>
               {name}
             </h1>
-            <p className='text-lg font-para text-gray-100'>{description}</p>
-            <p className='text-yellow-400 text-lg'>{stack}</p>
+            <p className='text-md font-para text-trueGray-50'>{description}</p>
+            <p className='text-amber-300 text-md'>{stack}</p>
           </div>
         </div>
       ))}

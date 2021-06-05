@@ -11,12 +11,18 @@ const Navbar = () => {
     }, 200);
   };
   return (
-    <section className='fixed inset-x-0 bg-white bg-opacity-80 text-gray-900 z-50'>
-      <div className='flex justify-between px-5 py-2 sm:py-1 items-center'>
+    <section className='fixed inset-x-0 bg-trueGray-900 text-gray-200 z-50'>
+      <div className='flex justify-between px-5 py-3 sm:py-1 items-center'>
         <div>
-          <span className='text-3xl font-extrabold sm:text-4xl'>&lt;</span>
-          <span className='text-5xl font-custom font-thin'>iamsdas</span>
-          <span className='text-3xl font-extrabold sm:text-4xl'>&gt;</span>
+          <span className='text-3xl font-extrabold sm:text-4xl text-amber-300'>
+            &lt;
+          </span>
+          <span className='text-5xl font-custom font-thin text-trueGray-200'>
+            iamsdas
+          </span>
+          <span className='text-3xl font-extrabold sm:text-4xl text-amber-300'>
+            &gt;
+          </span>
         </div>
         <button
           className='md:hidden block p-1 focus:outline-none'
@@ -28,12 +34,12 @@ const Navbar = () => {
             aria-hidden='true'
           />
         </button>
-        <div className='md:flex gap-3 hidden text-xl font-medium font-para'>
+        <div className='md:flex gap-3 hidden text-md font-semibold font-para uppercase'>
           <Link href='/'>
-            <a className='hover:text-yellow-600'>Home</a>
+            <a className='hover:text-amber-300'>Home</a>
           </Link>
           <Link href='/projects'>
-            <a className='hover:text-yellow-600'>Projects</a>
+            <a className='hover:text-amber-300'>Projects</a>
           </Link>
           {/* <Link href='#'>
             <a className='hover:text-yellow-600'>Blogs</a>

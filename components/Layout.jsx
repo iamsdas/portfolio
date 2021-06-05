@@ -11,6 +11,7 @@ const Layout = ({ children }) => {
         <meta charSet='utf-8' />
         <meta name='viewport' content='initial-scale=1.0, width=device-width' />
         <meta httpEquiv='X-UA-Compatible' content='IE=edge' />
+        <meta name='theme-color' content='#171717' />
         <title>Suryashankar Das (iamsdas)</title>
         {/* SEO Specific Tags */}
         <meta
