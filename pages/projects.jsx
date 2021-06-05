@@ -1,7 +1,46 @@
 import React from 'react';
 import Image from 'next/image';
 
-const projects = () => {
+const projects = ({ projects }) => (
+  <section className='bg-gray-700 text-gray-50 px-4 sm:px-8 md:px-16'>
+    <div className='pt-24 pb-8 font-para text-xl text-center'>
+      This is a showcase of some of my projects. Click the images to get further
+      details about it.
+    </div>
+    <div className='space-y-8 pb-8 flex flex-col justify-around items-center'>
+      {projects.map(({ name, description, stack, image, url }, index) => (
+        <div
+          className='rounded-xl bg-gray-800 flex flex-col md:flex-row items-stretch w-full sm:w-3/5 md:w-5/6 lg:w-3/5 group'
+          key={index}>
+          <a
+            href={url}
+            className='w-full md:w-2/5 bg-gray-900 rounded-t-xl sm:rounded-tr-none sm:rounded-l-xl flex justify-center items-center'>
+            <div className='filter group-hover:contrast-100 w-full contrast-75 hover:blur p-4'>
+              <div className='aspect-w-1 aspect-h-1 relative flex-1'>
+                <Image
+                  src={`/images/projects/${image}.webp`}
+                  alt={name}
+                  layout='fill'
+                  objectFit='scale-down'
+                  unoptimized='true'
+                />
+              </div>
+            </div>
+          </a>
+          <div className='space-y-6 w-full md:w-3/5 p-4 self-center leading-snug'>
+            <h1 className='text-2xl font-bold text-gray-100 group-hover:text-gray-50'>
+              {name}
+            </h1>
+            <p className='text-lg font-para text-gray-100'>{description}</p>
+            <p className='text-yellow-400 text-lg'>{stack}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+);
+
+export const getStaticProps = async () => {
   const projects = [
     {
       name: 'Collaborative Whiteboard',
@@ -62,44 +101,11 @@ const projects = () => {
     },
   ];
 
-  return (
-    <section className='bg-gray-700 text-gray-50 px-4 sm:px-8 md:px-16'>
-      <div className='pt-24 pb-8 font-para text-xl text-center'>
-        This is a showcase of some of my projects. Click the images to get
-        further details about it.
-      </div>
-      <div className='space-y-8 pb-8 flex flex-col justify-around items-center'>
-        {projects.map(({ name, description, stack, image, url }, index) => (
-          <div
-            className='rounded-xl bg-gray-800 flex flex-col md:flex-row items-stretch w-full sm:w-3/5 md:w-5/6 lg:w-3/5 group'
-            key={index}>
-            <a
-              href={url}
-              className='w-full md:w-2/5 bg-gray-900 rounded-t-xl sm:rounded-tr-none sm:rounded-l-xl flex justify-center items-center'>
-              <div className='filter group-hover:contrast-100 w-full contrast-75 hover:blur p-4'>
-                <div className='aspect-w-1 aspect-h-1 relative flex-1'>
-                  <Image
-                    src={`/images/projects/${image}.webp`}
-                    alt={name}
-                    layout='fill'
-                    objectFit='scale-down'
-                    unoptimized='true'
-                  />
-                </div>
-              </div>
-            </a>
-            <div className='space-y-6 w-full md:w-3/5 p-4 self-center leading-snug'>
-              <h1 className='text-2xl font-bold text-gray-100 group-hover:text-gray-50'>
-                {name}
-              </h1>
-              <p className='text-lg font-para text-gray-100'>{description}</p>
-              <p className='text-yellow-400 text-lg'>{stack}</p>
-            </div>
-          </div>
-        ))}
-      </div>
-    </section>
-  );
+  return {
+    props: {
+      projects,
+    },
+  };
 };
 
 export default projects;
