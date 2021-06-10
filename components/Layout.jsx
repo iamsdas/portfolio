@@ -20,7 +20,7 @@ const Layout = ({ children }) => {
         />
         <meta
           name='google-site-verification'
-          content='nhvnz7qvhSlwPw0IQj0cV7JXdsmpbiJ_nvbFz-N-a90'
+          content='_PJHG6L8Nv-7kUrFbYg_ThgZ26chiNe3g7NLFuNVHvw'
         />
         {/* Fonts */}
         <link
