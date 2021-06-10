@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 const Banner = ({ contactInfo }) => (
   <section
     className='min-h-screen bg-gradient-to-b from-trueGray-900 to-trueGray-800
-      font-medium uppercase text-gray-50 text-center sm:text-left'>
+      font-medium uppercase text-trueGray-50 text-center sm:text-left'>
     <div className='min-h-screen flex justify-center items-center px-5'>
       <div>
         <div className='text-5xl lg:text-6xl'>Hey there !!</div>
@@ -14,7 +14,7 @@ const Banner = ({ contactInfo }) => (
           <span className='font-bold text-amber-300'>Suryashankar Das</span>,
         </div>
         <div className='text-5xl lg:text-6xl'>A Student Developer</div>
-        <div className='text-3xl lg:text-4xl pt-8 font-thin font-mono text-gray-300'>
+        <div className='text-3xl lg:text-4xl pt-8 font-thin font-mono text-trueGray-300'>
           Interested in
           <Typical
             steps={[

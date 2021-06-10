@@ -14,7 +14,7 @@ const projects = ({ projects }) => (
           key={index}>
           <a
             href={url}
-            className='w-full md:w-2/5 flex justify-center items-center p-2 bg-warmGray-700'>
+            className='w-full md:w-2/5 flex justify-center items-center p-2 bg-trueGray-300'>
             <div className='filter w-full hover:blur'>
               <div className='aspect-w-1 aspect-h-1 relative flex-1'>
                 <Image
@@ -28,7 +28,7 @@ const projects = ({ projects }) => (
             </div>
           </a>
           <div className='space-y-6 w-full md:w-3/5 p-4 self-center leading-snug'>
-            <h1 className='text-2xl font-bold text-trueGray-100 group-hover:text-gray-50'>
+            <h1 className='text-2xl font-bold text-trueGray-100 group-hover:text-trueGray-50'>
               {name}
             </h1>
             <p className='text-md font-para text-trueGray-50'>{description}</p>

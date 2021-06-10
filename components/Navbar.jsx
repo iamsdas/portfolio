@@ -11,7 +11,7 @@ const Navbar = () => {
     }, 200);
   };
   return (
-    <section className='fixed inset-x-0 bg-trueGray-900 text-gray-200 z-50'>
+    <section className='fixed inset-x-0 bg-trueGray-900 text-trueGray-200 z-50'>
       <div className='flex justify-between px-5 py-3 sm:py-1 items-center'>
         <div>
           <span className='text-3xl font-extrabold sm:text-4xl text-amber-300'>
@@ -52,14 +52,14 @@ const Navbar = () => {
         } flex-col gap-3 px-5 pb-5 items-stretch md:hidden text-2xl text-center font-para`}>
         <Link href='/'>
           <a
-            className='hover:text-yellow-600 border-gray-700 hover:border-yellow-500 border-t-2 pt-2'
+            className='hover:text-yellow-600 border-trueGray-700 hover:border-yellow-500 border-t-2 pt-2'
             onClick={stateChange}>
             Home
           </a>
         </Link>
         <Link href='/projects'>
           <a
-            className='hover:text-yellow-600 border-gray-700 hover:border-yellow-500 border-t-2 pt-2'
+            className='hover:text-yellow-600 border-trueGray-700 hover:border-yellow-500 border-t-2 pt-2'
             onClick={stateChange}>
             Projects
           </a>

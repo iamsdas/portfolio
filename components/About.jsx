@@ -8,7 +8,7 @@ const About = () => {
         <h1 className='text-4xl sm:text-5xl pb-5 font-bold uppercase text-left sm:text-center'>
           About Me
         </h1>
-        <div className='leading-relaxed text-xl sm:text-2xl text-left sm:text-justify text-trueGray-300 font-para'>
+        <div className='leading-relaxed text-xl sm:text-2xl text-left sm:text-justify text-trueGray-100 font-para'>
           I am a college student majoring in computer science and am a tech
           enthusiast. I mostly have experience in full stack web development,
           app development using Flutter, and artificial intelligence using
