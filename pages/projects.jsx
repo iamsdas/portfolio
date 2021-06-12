@@ -43,6 +43,14 @@ const projects = ({ projects }) => (
 export const getStaticProps = async () => {
   const projects = [
     {
+      name: 'Todo Lists',
+      description: `This is a simple todo lists web app made using Next.js. The graphql
+      backend is served via Next.js API routes (serverless functions) using the
+      apollo server. It uses NextAuth for an OAuth based passwordless authentication system`,
+      stack: 'Next.js, Apollo, Prisma, Postgres, Graphql, NextAuth',
+      image: 'todo',
+    },
+    {
       name: 'Collaborative Whiteboard',
       description: `This is a personal project in which I made a simple collborative
       drawing whiteboard webapp using Vue.js and Socket.io in which users can enter
