@@ -1,10 +1,10 @@
 const About = () => {
   return (
-    <section className='flex bg-trueGray-800 items-center justify-around'>
-      <div className='py-12 text-amber-300 md:w-2/3 px-5 border-t-2 border-trueGray-700 border-dashed border-opacity-75'>
-        <h1 className='text-4xl sm:text-5xl pb-5 font-bold uppercase text-left sm:text-center'>
+    <div className='flex bg-trueGray-800 items-center justify-around'>
+      <section className='py-12 text-amber-300 md:w-2/3 px-5 border-t-2 border-trueGray-700 border-dashed border-opacity-75'>
+        <h2 className='text-4xl sm:text-5xl pb-5 font-bold uppercase text-left sm:text-center'>
           About Me
-        </h1>
+        </h2>
         <div className='leading-relaxed text-xl sm:text-2xl text-left sm:text-justify text-trueGray-100 font-para'>
           I am a college student majoring in computer science and am a tech
           enthusiast. I mostly have experience in full stack web development,
@@ -13,8 +13,8 @@ const About = () => {
           looking into blockchain. I am also an active open source contributor
           and am a part of my college&apos;s open source society.
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   );
 };
 

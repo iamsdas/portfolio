@@ -16,7 +16,11 @@ const Layout = ({ children }) => {
         {/* SEO Specific Tags */}
         <meta
           name='description'
-          content='This is the personal portfolio website of Suryashankar Das (iamsdas)'
+          content="suryashankar das (iamsdas)'s personal portfolio website"
+        />
+        <meta
+          name='keywords'
+          content='suryashankar das, iamsdas, Suryashankar Das'
         />
         <meta
           name='google-site-verification'
@@ -29,7 +33,7 @@ const Layout = ({ children }) => {
           crossOrigin='anonymous'
         />
         <link
-          href='https://fonts.googleapis.com/css2?family=Sacramento&display=fallback'
+          href='https://fonts.googleapis.com/css2?family=Sacramento&display=swap'
           rel='stylesheet'
         />
         <link

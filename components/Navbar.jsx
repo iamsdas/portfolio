@@ -11,7 +11,7 @@ const Navbar = () => {
     }, 200);
   };
   return (
-    <section className='fixed inset-x-0 bg-trueGray-900 text-trueGray-200 z-50'>
+    <header className='fixed inset-x-0 bg-trueGray-900 text-trueGray-200 z-50'>
       <div className='flex justify-between px-5 py-3 sm:py-1 items-center'>
         <div>
           <span className='text-3xl font-extrabold sm:text-4xl text-amber-300'>
@@ -34,7 +34,7 @@ const Navbar = () => {
             aria-hidden='true'
           />
         </button>
-        <div className='md:flex gap-3 hidden text-md font-semibold font-para uppercase'>
+        <nav className='md:flex gap-3 hidden text-md font-semibold font-para uppercase'>
           <Link href='/'>
             <a className='hover:text-amber-300'>Home</a>
           </Link>
@@ -44,9 +44,9 @@ const Navbar = () => {
           {/* <Link href='#'>
             <a className='hover:text-yellow-600'>Blogs</a>
           </Link> */}
-        </div>
+        </nav>
       </div>
-      <div
+      <nav
         className={`${
           navMenu ? 'flex' : 'hidden'
         } flex-col gap-3 px-5 pb-5 items-stretch md:hidden text-2xl text-center font-para`}>
@@ -67,8 +67,8 @@ const Navbar = () => {
         {/* <Link href='#'>
           <a className='hover:text-yellow-600'>Blogs</a>
         </Link> */}
-      </div>
-    </section>
+      </nav>
+    </header>
   );
 };
 

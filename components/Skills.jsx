@@ -3,11 +3,11 @@ import Image from 'next/image';
 
 const Skills = ({ skills }) => {
   return (
-    <section className='bg-trueGray-800'>
-      <div className='px-5 py-12 space-y-4 md:w-2/3 mx-auto border-t-2 border-trueGray-700 border-dashed border-opacity-75'>
-        <h1 className='text-4xl sm:text-5xl pb-5 font-bold uppercase text-amber-300 text-left sm:text-center'>
+    <div className='bg-trueGray-800'>
+      <section className='px-5 py-12 space-y-4 md:w-2/3 mx-auto border-t-2 border-trueGray-700 border-dashed border-opacity-75'>
+        <h2 className='text-4xl sm:text-5xl pb-5 font-bold uppercase text-amber-300 text-left sm:text-center'>
           Skills and Tech Stack
-        </h1>
+        </h2>
         <div className='text-xl sm:text-2xl text-trueGray-100 font-para leading-relaxed text-left sm:text-justify pb-9'>
           Currently using Next.js, Prisma and Tailwind for full stack web
           development and solidity for making decentralized apps on the ethereum
@@ -33,8 +33,8 @@ const Skills = ({ skills }) => {
             </div>
           ))}
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   );
 };
 

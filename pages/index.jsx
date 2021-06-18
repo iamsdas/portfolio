@@ -9,11 +9,11 @@ import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 
 export default function Home({ skills, contactInfo }) {
   return (
-    <div>
+    <main>
       <Banner contactInfo={contactInfo} />
       <About />
       <Skills skills={skills} />
-    </div>
+    </main>
   );
 }
 
