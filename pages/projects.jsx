@@ -14,7 +14,7 @@ const projects = ({ projects }) => (
           key={index}>
           <a
             href={url}
-            className='w-full md:w-2/5 flex justify-center items-center p-2 bg-trueGray-300'>
+            className='w-full md:w-2/5 flex justify-center items-center p-2 bg-trueGray-700'>
             <div className='filter w-full hover:blur'>
               <div className='aspect-w-1 aspect-h-1 relative flex-1'>
                 <Image
