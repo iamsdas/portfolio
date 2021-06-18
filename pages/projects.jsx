@@ -48,6 +48,7 @@ export const getStaticProps = async () => {
       serves GraphQL via Next.js API routes (serverless functions) using Apollo server.
       It uses NextAuth for OAuth based passwordless authentication`,
       stack: 'Next.js, Apollo, Prisma, Postgres, Graphql, NextAuth',
+      url: 'https://todo-lists.vercel.app/',
       image: 'todo',
     },
     {
