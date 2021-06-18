@@ -1,9 +1,6 @@
-import React from 'react';
-import Image from 'next/image';
-
 const About = () => {
   return (
-    <section className='flex md:flex-row flex-col-reverse bg-trueGray-800 items-center justify-around'>
+    <section className='flex bg-trueGray-800 items-center justify-around'>
       <div className='py-12 text-amber-300 md:w-2/3 px-5 border-t-2 border-trueGray-700 border-dashed border-opacity-75'>
         <h1 className='text-4xl sm:text-5xl pb-5 font-bold uppercase text-left sm:text-center'>
           About Me
@@ -14,7 +11,7 @@ const About = () => {
           app development using Flutter, and artificial intelligence using
           TensorFlow. I love exploring the latest technologies and am currently
           looking into blockchain. I am also an active open source contributor
-          and am a part of my college's open source society.
+          and am a part of my college&apos;s open source society.
         </div>
       </div>
     </section>

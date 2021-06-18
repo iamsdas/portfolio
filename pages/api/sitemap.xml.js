@@ -1,7 +1,7 @@
 import { SitemapStream, streamToPromise, EnumChangefreq } from 'sitemap';
 import { createGzip } from 'zlib';
 
-export default async (req, res) => {
+const sitemap = async (req, res) => {
   if (!res) return {};
   try {
     // Set response header
@@ -40,3 +40,5 @@ export default async (req, res) => {
     res.status(500).end();
   }
 };
+
+export default sitemap;
