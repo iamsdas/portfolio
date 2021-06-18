@@ -44,16 +44,16 @@ export const getStaticProps = async () => {
   const projects = [
     {
       name: 'Todo Lists',
-      description: `This is a simple todo lists web app made using Next.js. The graphql
-      backend is served via Next.js API routes (serverless functions) using the
-      apollo server. It uses NextAuth for an OAuth based passwordless authentication system`,
+      description: `This is a simple todo lists web app made using Next.js. The backend
+      serves GraphQL via Next.js API routes (serverless functions) using Apollo server.
+      It uses NextAuth for OAuth based passwordless authentication`,
       stack: 'Next.js, Apollo, Prisma, Postgres, Graphql, NextAuth',
       image: 'todo',
     },
     {
       name: 'Collaborative Whiteboard',
-      description: `This is a personal project in which I made a simple collborative
-      drawing whiteboard webapp using Vue.js and Socket.io in which users can enter
+      description: `This is a personal project in which I made a simple collaborative
+      drawing whiteboard web app using Vue.js and Socket.io in which users can enter
       a unique room code and collaborate with each others.`,
       stack: 'Vue.js, Node.js, Socket.io',
       url: 'https://github.com/iamsdas/whiteboard',
@@ -62,7 +62,7 @@ export const getStaticProps = async () => {
     {
       name: 'Text Compression',
       description: `This is a class project in which I made an interactive CLI utility
-      for lossless text compression using an optimized version of the LZW algorithm in C++.`,
+      for lossless text compression using an optimized LZW algorithm in C++.`,
       stack: 'C++, LZW',
       url: 'https://github.com/iamsdas/Text-Compression',
       image: 'txtcomp',
@@ -81,7 +81,7 @@ export const getStaticProps = async () => {
       name: 'Gesture Calculator',
       description: `This is a personal project in which I built a calculator
       applicaiton using Flutter which takes in input via touch based gestures
-      which are classified into standard standart numericals and arithmetic
+      which are classified into standard standard numericals and arithmetic
       symbols using TensorFlow (CNNs)`,
       stack: 'Flutter, TensorFlow, TFlite',
       url: 'https://github.com/iamsdas/Flutter-Gesture-Calculator',

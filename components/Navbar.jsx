@@ -17,9 +17,9 @@ const Navbar = () => {
           <span className='text-3xl font-extrabold sm:text-4xl text-amber-300'>
             &lt;
           </span>
-          <span className='text-5xl font-custom font-thin text-trueGray-200'>
+          <h1 className='text-5xl font-custom font-thin text-trueGray-200 inline'>
             iamsdas
-          </span>
+          </h1>
           <span className='text-3xl font-extrabold sm:text-4xl text-amber-300'>
             &gt;
           </span>

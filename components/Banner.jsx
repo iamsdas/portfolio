@@ -11,7 +11,7 @@ const Banner = ({ contactInfo }) => (
         <div className='text-5xl lg:text-6xl'>Hey there !!</div>
         <div className='sm:text-6xl text-5xl lg:text-7xl'>
           I am{' '}
-          <span className='font-bold text-amber-300'>Suryashankar Das</span>,
+          <h1 className='font-bold text-amber-300 inline'>Suryashankar Das</h1>,
         </div>
         <div className='text-5xl lg:text-6xl'>A Student Developer</div>
         <div className='text-3xl lg:text-4xl pt-8 font-thin font-mono text-trueGray-300'>

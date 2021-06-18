@@ -3,5 +3,5 @@ Sitemap: https://iamsdas.me/api/sitemap.xml
 User-agent: *
 Allow: /*
 
-Disallow: /api/*
+Disallow: /images/*
 
