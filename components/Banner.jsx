@@ -28,6 +28,7 @@ const Banner = ({ contactInfo }) => (
               1200,
             ]}
             loop={Infinity}
+            wrapper='div'
           />
         </div>
         <div className='flex sm:justify-start items-center gap-6 sm:gap-8 justify-center pt-12 text-4xl pb-2 text-amber-300'>

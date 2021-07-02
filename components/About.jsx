@@ -7,11 +7,12 @@ const About = () => {
         </h2>
         <div className='leading-relaxed text-xl sm:text-2xl text-left sm:text-justify text-trueGray-100 font-para'>
           I am a college student majoring in computer science and am a tech
-          enthusiast. I mostly have experience in full stack web development,
-          app development using Flutter, and artificial intelligence using
-          TensorFlow. I love exploring the latest technologies and am currently
-          looking into blockchain. I am also an active open source contributor
-          and am a part of my college&apos;s open source society.
+          enthusiast. I am an aspiring software developer and have experience in
+          Jamstack and MERN stack web development, app development using
+          Flutter, and artificial intelligence using TensorFlow. I love
+          exploring the latest technologies and am currently looking into
+          blockchain. I am also an active open source contributor and am a part
+          of my college&apos;s open source society.
         </div>
       </section>
     </div>
