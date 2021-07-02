@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { faTimes } from '@fortawesome/free-solid-svg-icons';
 
 const Navbar = () => {
   const [navMenu, setNavMenu] = useState(false);
@@ -25,12 +26,13 @@ const Navbar = () => {
           </span>
         </div>
         <button
-          className='md:hidden block p-1 focus:outline-none'
+          className='md:hidden block focus:outline-none'
           aria-label='dropdown button'
           onClick={stateChange}>
           <FontAwesomeIcon
-            icon={faBars}
-            className='w-8 h-8'
+            icon={navMenu ? faTimes : faBars}
+            className='w-9 h-9'
+            size='lg'
             aria-hidden='true'
           />
         </button>
@@ -41,6 +43,11 @@ const Navbar = () => {
           <Link href='/projects'>
             <a className='hover:text-amber-300'>Projects</a>
           </Link>
+          <a
+            href='https://docs.google.com/document/d/1fhX1T7B31nYPVqpcSHxss57kU7FaPvz1r57CR7nIm2g/export?format=pdf'
+            className='hover:text-amber-300'>
+            Resume
+          </a>
           {/* <Link href='#'>
             <a className='hover:text-yellow-600'>Blogs</a>
           </Link> */}
@@ -64,6 +71,11 @@ const Navbar = () => {
             Projects
           </a>
         </Link>
+        <a
+          href='https://docs.google.com/document/d/1fhX1T7B31nYPVqpcSHxss57kU7FaPvz1r57CR7nIm2g/export?format=pdf'
+          className='hover:text-amber-300 border-trueGray-700 hover:border-yellow-500 border-t-2 pt-2'>
+          Resume
+        </a>
         {/* <Link href='#'>
           <a className='hover:text-yellow-600'>Blogs</a>
         </Link> */}

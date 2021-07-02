@@ -24,8 +24,6 @@ const Banner = ({ contactInfo }) => (
               1200,
               'Deep Learning',
               1200,
-              'App Development',
-              1200,
             ]}
             loop={Infinity}
             wrapper='div'
