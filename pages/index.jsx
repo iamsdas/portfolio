@@ -21,6 +21,7 @@ export const getStaticProps = async () => {
   const skills = [
     { name: 'nextjs', url: 'https://nextjs.org/' },
     { name: 'react', url: 'https://reactjs.org/' },
+    { name: 'vue', url: 'https://vuejs.org/' },
     { name: 'tailwindcss', url: 'https://tailwindcss.com/' },
     { name: 'nodejs', url: 'https://nodejs.org/en/' },
     { name: 'graphql', url: 'https://graphql.org/' },
