@@ -52,6 +52,14 @@ export const getStaticProps = async () => {
       image: 'todo',
     },
     {
+      name: 'Dodging Turtis',
+      description: `This is a turtle themed NFT(blockchain) game promoting Indian art built
+      by me and my team during the ETHOdyssey hackathon.`,
+      stack: 'IPFS, Chainlink, Polygon, Openzepplin, Filecoin, MERN, Phaser3',
+      url: 'https://devfolio.co/submissions/dodging-turtis-01a4',
+      image: 'turtis',
+    },
+    {
       name: 'Collaborative Whiteboard',
       description: `This is a personal project in which I made a simple collaborative
       drawing whiteboard web app using Vue.js and Socket.io in which users can enter
@@ -105,7 +113,7 @@ export const getStaticProps = async () => {
       saves the user provided string in the URL which is then shareable. It
       also provides some minimal syntax highlighting using Prism.js`,
       stack: 'HTML, CSS, Prism.js, ULZSS',
-      url: 'https://github.com/iamsdas/Flutter-Gesture-Calculator',
+      url: 'https://iamsdas.github.io/paste',
       image: 'pastebin',
     },
   ];
