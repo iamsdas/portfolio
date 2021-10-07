@@ -44,7 +44,7 @@ const Navbar = () => {
             <a className='hover:text-amber-300'>Projects</a>
           </Link>
           <a
-            href='https://docs.google.com/document/d/1fhX1T7B31nYPVqpcSHxss57kU7FaPvz1r57CR7nIm2g/export?format=pdf'
+            href='https://docs.google.com/document/d/1YNOaRup9abZyWiZCYfQTNSKEiIUdgCCG0hTci2BlO1M/export?format=pdf'
             className='hover:text-amber-300'>
             Resume
           </a>
@@ -72,7 +72,7 @@ const Navbar = () => {
           </a>
         </Link>
         <a
-          href='https://docs.google.com/document/d/1fhX1T7B31nYPVqpcSHxss57kU7FaPvz1r57CR7nIm2g/export?format=pdf'
+          href='https://docs.google.com/document/d/1YNOaRup9abZyWiZCYfQTNSKEiIUdgCCG0hTci2BlO1M/export?format=pdf'
           className='hover:text-amber-300 border-trueGray-700 hover:border-yellow-500 border-t-2 pt-2'>
           Resume
         </a>
