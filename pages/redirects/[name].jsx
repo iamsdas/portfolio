@@ -5,9 +5,7 @@ import { useEffect } from 'react';
 const Redirects = ({ obj }) => {
   const router = useRouter();
   useEffect(() => {
-    setTimeout(() => {
-      router.replace(obj.url);
-    }, 1000);
+    router.replace(obj.url);
   }, [obj, router]);
 
   return (

@@ -6,10 +6,18 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faGitlab } from '@fortawesome/free-brands-svg-icons';
 import { faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
+import Head from 'next/head';
 
 export default function Home({ skills, contactInfo }) {
   return (
     <main>
+      <Head>
+        <meta
+          property='og:image'
+          content='https://raw.githubusercontent.com/iamsdas/profile/master/profile-frontend/static/favicon/favicon-512.png'
+        />
+        <meta property='og:title' content="Suryashankar's Portfolio Website" />
+      </Head>
       <Banner contactInfo={contactInfo} />
       <About />
       <Skills skills={skills} />
