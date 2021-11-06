@@ -22,7 +22,6 @@ const projects = ({ projects }) => (
                   alt={name}
                   layout='fill'
                   objectFit='scale-down'
-                  unoptimized='true'
                 />
               </div>
             </div>

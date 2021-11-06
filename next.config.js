@@ -15,4 +15,7 @@ module.exports = {
     locales: ['en-US'],
     defaultLocale: 'en-US',
   },
+  images: {
+    minimumCacheTTL: 2592000, // 30 days
+  },
 };
