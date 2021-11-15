@@ -8,7 +8,7 @@ const projects = ({ projects }) => (
       details about the project.
     </div>
     <div className='space-y-8 pb-8 flex flex-col justify-around items-center'>
-      {projects.map(({ name, description, stack, image, url }, index) => (
+      {projects.map(({ name, description, stack, image, url, rgb }, index) => (
         <div
           className='bg-trueGray-800 flex flex-col md:flex-row items-stretch justify-center w-full sm:w-3/5 md:w-5/6 lg:w-3/5'
           key={index}>
@@ -22,6 +22,8 @@ const projects = ({ projects }) => (
                   alt={name}
                   layout='fill'
                   objectFit='scale-down'
+                  placeholder='blur'
+                  blurDataURL={rgbDataURL(...rgb)}
                 />
               </div>
             </div>
@@ -39,6 +41,21 @@ const projects = ({ projects }) => (
   </section>
 );
 
+const rgbDataURL = (r, g, b) => {
+  const keyStr =
+    'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/=';
+
+  const triplet = (e1, e2, e3) =>
+    keyStr.charAt(e1 >> 2) +
+    keyStr.charAt(((e1 & 3) << 4) | (e2 >> 4)) +
+    keyStr.charAt(((e2 & 15) << 2) | (e3 >> 6)) +
+    keyStr.charAt(e3 & 63);
+
+  return `data:image/gif;base64,R0lGODlhAQABAPAA${
+    triplet(0, r, g) + triplet(b, 255, 255)
+  }/yH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==`;
+};
+
 export const getStaticProps = async () => {
   const projects = [
     {
@@ -49,6 +66,7 @@ export const getStaticProps = async () => {
       stack: 'Next.js, Apollo, Prisma, Postgres, Graphql, NextAuth',
       url: 'https://todo-lists.vercel.app/',
       image: 'todo',
+      rgb: [31, 41, 56],
     },
     {
       name: 'Dodging Turtis',
@@ -57,6 +75,7 @@ export const getStaticProps = async () => {
       stack: 'IPFS, Chainlink, Polygon, Openzepplin, Filecoin, MERN, Phaser3',
       url: 'https://devfolio.co/submissions/dodging-turtis-01a4',
       image: 'turtis',
+      rgb: [226, 243, 230],
     },
     {
       name: 'Collaborative Whiteboard',
@@ -66,6 +85,7 @@ export const getStaticProps = async () => {
       stack: 'Vue.js, Node.js, Socket.io',
       url: 'https://github.com/iamsdas/whiteboard',
       image: 'whiteboard',
+      rgb: [255, 255, 255],
     },
     {
       name: 'Text Compression',
@@ -74,6 +94,7 @@ export const getStaticProps = async () => {
       stack: 'C++, LZW',
       url: 'https://github.com/iamsdas/Text-Compression',
       image: 'txtcomp',
+      rgb: [30, 30, 30],
     },
     {
       name: 'Xmeme',
@@ -84,6 +105,7 @@ export const getStaticProps = async () => {
       stack: 'Flask, Vue.js, Bootstrap, Docker, Swagger-UI',
       url: 'https://github.com/iamsdas/xmeme-backend',
       image: 'xmeme',
+      rgb: [255, 255, 255],
     },
     {
       name: 'Gesture Calculator',
@@ -94,6 +116,7 @@ export const getStaticProps = async () => {
       stack: 'Flutter, TensorFlow, TFlite',
       url: 'https://github.com/iamsdas/Flutter-Gesture-Calculator',
       image: 'calculator',
+      rgb: [255, 255, 255],
     },
     {
       name: 'Apoyo',
@@ -104,6 +127,7 @@ export const getStaticProps = async () => {
       stack: 'Flutter, Firebase',
       url: 'https://devpost.com/software/apoyo-gxj0fe',
       image: 'apoyo',
+      rgb: [255, 255, 255],
     },
     {
       name: 'Static Pastebin Clone',
@@ -114,6 +138,7 @@ export const getStaticProps = async () => {
       stack: 'HTML, CSS, Prism.js, ULZSS',
       url: 'https://iamsdas.github.io/paste',
       image: 'pastebin',
+      rgb: [40, 41, 34],
     },
   ];
 
