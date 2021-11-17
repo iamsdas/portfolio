@@ -24,7 +24,7 @@ const Redirects = ({ obj }) => {
 const redirects = {
   'skill-verification-system': {
     url: 'https://learn.figment.io/tutorials/create-a-blockchain-skill-verification-system',
-    img: 'https://figment.io/wp-content/uploads/2019/08/figment-networks-logo.jpg',
+    img: 'https://avatars.githubusercontent.com/u/39868583',
     title: 'Blockchain Based Skill Verification System Tutorial',
     desc: 'This is a tuorial on "Blockchain based skill verification system" co-written by me and one of my friends',
   },
