@@ -70,10 +70,11 @@ export const getStaticProps = async () => {
     },
     {
       name: 'Dodging Turtis',
-      description: `This is a turtle themed NFT(blockchain) game promoting Indian art built
-      by me and my team during the ETHOdyssey hackathon.`,
-      stack: 'IPFS, Chainlink, Polygon, Openzepplin, Filecoin, MERN, Phaser3',
-      url: 'https://devfolio.co/submissions/dodging-turtis-01a4',
+      description: `This is a turtle themed, web-based NFT(blockchain) game and marketplace,
+      built initially by me and my team during the ETHOdyssey hackathon.`,
+      stack:
+        'IPFS, Chainlink, Polygon, Openzepplin, Filecoin, Next.js, Redux, Phaser3',
+      url: 'https://github.com/Dodging-Turtis/Dodging-Turtis',
       image: 'turtis',
       rgb: [226, 243, 230],
     },
