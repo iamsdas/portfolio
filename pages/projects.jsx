@@ -10,11 +10,11 @@ const projects = ({ projects }) => (
     <div className='space-y-8 pb-8 flex flex-col justify-around items-center'>
       {projects.map(({ name, description, stack, image, url, rgb }, index) => (
         <div
-          className='bg-trueGray-800 flex flex-col md:flex-row items-stretch justify-center w-full sm:w-3/5 md:w-5/6 lg:w-3/5'
+          className='bg-trueGray-800 flex flex-col md:flex-row items-stretch justify-center w-full sm:w-3/5 md:w-5/6 lg:w-3/5 transition ease-in-out hover:-translate-y-1 hover:scale-105 rounded-2xl shadow-sm hover:shadow-2xl'
           key={index}>
           <a
             href={url}
-            className='w-full md:w-2/5 flex justify-center items-center p-2 bg-trueGray-700'>
+            className='w-full md:w-2/5 flex justify-center items-center p-2 bg-trueGray-700 rounded-t-2xl md:rounded-tr-none md:rounded-l-2xl'>
             <div className='filter w-full hover:blur'>
               <div className='aspect-w-1 aspect-h-1 relative flex-1'>
                 <Image
