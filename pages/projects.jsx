@@ -10,7 +10,7 @@ const projects = ({ projects }) => (
     <div className='space-y-8 pb-8 flex flex-col justify-around items-center'>
       {projects.map(({ name, description, stack, image, url, rgb }, index) => (
         <div
-          className='bg-trueGray-800 flex flex-col md:flex-row items-stretch justify-center w-full sm:w-3/5 md:w-5/6 lg:w-3/5 transition ease-in-out hover:-translate-y-1 hover:scale-105 rounded-2xl shadow-sm hover:shadow-2xl'
+          className='bg-trueGray-800 flex flex-col md:flex-row items-stretch justify-center w-full sm:w-3/5 md:w-5/6 lg:w-3/5 transition ease-in-out sm:hover:-translate-y-1 sm:hover:scale-105 rounded-2xl shadow-sm sm:hover:shadow-2xl'
           key={index}>
           <a
             href={url}

@@ -8,7 +8,7 @@ module.exports = {
     fontFamily: {
       custom: ['Sacramento'],
       para: ['Poppins', ...defaultTheme.fontFamily.sans],
-      mono: [...defaultTheme.fontFamily.mono],
+      mono: ['Fira Code', ...defaultTheme.fontFamily.mono],
     },
     colors: colors,
     extend: {},
