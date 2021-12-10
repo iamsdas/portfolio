@@ -12,13 +12,13 @@ const Navbar = () => {
     }, 200);
   };
   return (
-    <header className='fixed inset-x-0 bg-trueGray-900 text-trueGray-200 z-50'>
+    <header className='fixed inset-x-0 bg-neutral-900 text-neutral-200 z-50'>
       <div className='flex justify-between px-5 py-3 sm:py-1 items-center'>
         <div>
           <span className='text-3xl font-extrabold sm:text-4xl text-amber-300'>
             &lt;
           </span>
-          <h1 className='text-5xl font-custom font-thin text-trueGray-200 inline'>
+          <h1 className='text-5xl font-custom font-thin text-neutral-200 inline'>
             iamsdas
           </h1>
           <span className='text-3xl font-extrabold sm:text-4xl text-amber-300'>
@@ -59,21 +59,21 @@ const Navbar = () => {
         } flex-col gap-3 px-5 pb-5 items-stretch md:hidden text-2xl text-center font-para`}>
         <Link href='/'>
           <a
-            className='hover:text-yellow-600 border-trueGray-700 hover:border-yellow-500 border-t-2 pt-2'
+            className='hover:text-yellow-600 border-neutral-700 hover:border-yellow-500 border-t-2 pt-2'
             onClick={stateChange}>
             Home
           </a>
         </Link>
         <Link href='/projects'>
           <a
-            className='hover:text-yellow-600 border-trueGray-700 hover:border-yellow-500 border-t-2 pt-2'
+            className='hover:text-yellow-600 border-neutral-700 hover:border-yellow-500 border-t-2 pt-2'
             onClick={stateChange}>
             Projects
           </a>
         </Link>
         <a
           href='https://docs.google.com/document/d/1YNOaRup9abZyWiZCYfQTNSKEiIUdgCCG0hTci2BlO1M/export?format=pdf'
-          className='hover:text-amber-300 border-trueGray-700 hover:border-yellow-500 border-t-2 pt-2'>
+          className='hover:text-amber-300 border-neutral-700 hover:border-yellow-500 border-t-2 pt-2'>
           Resume
         </a>
         {/* <Link href='#'>

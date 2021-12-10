@@ -1,8 +1,6 @@
 const defaultTheme = require('tailwindcss/defaultTheme');
-const colors = require('tailwindcss/colors');
 
 module.exports = {
-  mode: 'jit',
   purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
   theme: {
     fontFamily: {
@@ -10,11 +8,9 @@ module.exports = {
       para: ['Poppins', ...defaultTheme.fontFamily.sans],
       mono: ['Fira Code', ...defaultTheme.fontFamily.mono],
     },
-    colors: colors,
     extend: {},
   },
   variants: {
     extend: {},
   },
-  plugins: [require('@tailwindcss/aspect-ratio')],
 };

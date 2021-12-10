@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 
 const projects = ({ projects }) => (
-  <section className='bg-trueGray-900 text-trueGray-300 px-4 sm:px-8 md:px-16'>
+  <section className='bg-neutral-900 text-neutral-300 px-4 sm:px-8 md:px-16'>
     <div className='pt-24 pb-8 font-para text-xl text-center sm:w-3/5 md:w-5/6 lg:w-3/5 mx-auto'>
       This is a showcase of some of my projects. Click an image to get further
       details about the project.
@@ -10,13 +10,13 @@ const projects = ({ projects }) => (
     <div className='space-y-8 pb-8 flex flex-col justify-around items-center'>
       {projects.map(({ name, description, stack, image, url, rgb }, index) => (
         <div
-          className='bg-trueGray-800 flex flex-col md:flex-row items-stretch justify-center w-full sm:w-3/5 md:w-5/6 lg:w-3/5 transition ease-in-out sm:hover:-translate-y-1 sm:hover:scale-105 rounded-2xl shadow-sm sm:hover:shadow-2xl'
+          className='bg-neutral-800 flex flex-col md:flex-row items-stretch justify-center w-full sm:w-3/5 md:w-5/6 lg:w-3/5 transition ease-in-out sm:hover:-translate-y-1 sm:hover:scale-105 rounded-2xl shadow-sm sm:hover:shadow-2xl'
           key={index}>
           <a
             href={url}
-            className='w-full md:w-2/5 flex justify-center items-center p-2 bg-trueGray-700 rounded-t-2xl md:rounded-tr-none md:rounded-l-2xl'>
+            className='w-full md:w-2/5 flex justify-center items-center p-2 bg-neutral-700 rounded-t-2xl md:rounded-tr-none md:rounded-l-2xl'>
             <div className='filter w-full hover:blur'>
-              <div className='aspect-w-1 aspect-h-1 relative flex-1'>
+              <div className='aspect-square relative flex-1'>
                 <Image
                   src={`/images/projects/${image}.webp`}
                   alt={name}
@@ -29,10 +29,10 @@ const projects = ({ projects }) => (
             </div>
           </a>
           <div className='space-y-6 w-full md:w-3/5 p-4 self-center leading-snug'>
-            <h1 className='text-2xl font-bold text-trueGray-100 group-hover:text-trueGray-50'>
+            <h1 className='text-2xl font-bold text-neutral-100 group-hover:text-neutral-50'>
               {name}
             </h1>
-            <p className='text-md font-para text-trueGray-50'>{description}</p>
+            <p className='text-md font-para text-neutral-50'>{description}</p>
             <p className='text-amber-300 text-md'>{stack}</p>
           </div>
         </div>

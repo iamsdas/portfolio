@@ -1,11 +1,11 @@
 const About = () => {
   return (
-    <div className='flex bg-trueGray-800 items-center justify-around'>
-      <section className='py-12 text-amber-300 md:w-2/3 px-5 border-t-2 border-trueGray-700 border-dashed border-opacity-75'>
+    <div className='flex bg-neutral-800 items-center justify-around'>
+      <section className='py-12 text-amber-300 md:w-2/3 px-5 border-t-2 border-neutral-700 border-dashed border-opacity-75'>
         <h2 className='text-4xl sm:text-5xl pb-5 font-bold uppercase text-left sm:text-center'>
           About Me
         </h2>
-        <div className='leading-relaxed text-xl sm:text-2xl text-left sm:text-justify text-trueGray-100 font-para'>
+        <div className='leading-relaxed text-xl sm:text-2xl text-left sm:text-justify text-neutral-100 font-para'>
           I am a college student majoring in computer science and am a tech
           enthusiast. I am an aspiring software developer and have experience in
           Jamstack and MERN stack web development, app development using
