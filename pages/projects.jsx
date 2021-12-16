@@ -69,14 +69,14 @@ export const getStaticProps = async () => {
       rgb: [31, 41, 56],
     },
     {
-      name: 'Dodging Turtis',
-      description: `This is a turtle themed, web-based NFT(blockchain) game and marketplace,
-      built initially by me and my team during the ETHOdyssey hackathon.`,
+      name: 'Plane Rush',
+      description: `This is a NFT(blockchain) based game and marketplace,
+      built initially by me and my team during the Chainlink Fall hackathon.`,
       stack:
-        'IPFS, Chainlink, Polygon, Openzepplin, Filecoin, Next.js, Redux, Phaser3',
-      url: 'https://github.com/Dodging-Turtis/Dodging-Turtis',
-      image: 'turtis',
-      rgb: [226, 243, 230],
+        'IPFS, Chainlink, Polygon, Openzepplin, Filecoin, React.js, Phaser3',
+      url: 'https://devpost.com/software/plane-rush',
+      image: 'plane',
+      rgb: [215, 228, 225],
     },
     {
       name: 'Collaborative Whiteboard',
@@ -87,6 +87,15 @@ export const getStaticProps = async () => {
       url: 'https://github.com/iamsdas/whiteboard',
       image: 'whiteboard',
       rgb: [255, 255, 255],
+    },
+    {
+      name: 'Decentraskill',
+      description: `This is a group project in which we have made a
+      blockchain based based skill verification system`,
+      stack: 'React.js, Solidity',
+      url: 'https://github.com/iamsdas/Decentraskill/',
+      image: 'decentraskill',
+      rgb: [198, 196, 176],
     },
     {
       name: 'Text Compression',
