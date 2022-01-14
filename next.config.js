@@ -11,11 +11,9 @@ module.exports = {
 
     return config;
   },
-  i18n: {
-    locales: ['en-US'],
-    defaultLocale: 'en-US',
-  },
   images: {
     minimumCacheTTL: 2592000, // 30 days
+    loader: 'imgix',
+    path: '',
   },
 };

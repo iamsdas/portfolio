@@ -23,6 +23,7 @@ const projects = ({ projects }) => (
                   layout='fill'
                   objectFit='scale-down'
                   placeholder='blur'
+                  unoptimized={true}
                   blurDataURL={rgbDataURL(...rgb)}
                 />
               </div>
