@@ -7,14 +7,14 @@ const projects = ({ projects }) => (
       This is a showcase of some of my projects. Click an image to get further
       details about the project.
     </div>
-    <div className='space-y-8 pb-8 flex flex-col justify-around items-center'>
+    <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-auto gap-6 lg:gap-14 justify-items-center items-start'>
       {projects.map(({ name, description, stack, image, url, rgb }, index) => (
         <div
-          className='bg-neutral-800 flex flex-col md:flex-row items-stretch justify-center w-full sm:w-3/5 md:w-5/6 lg:w-3/5 transition ease-in-out sm:hover:-translate-y-1 sm:hover:scale-105 rounded-2xl shadow-sm sm:hover:shadow-2xl'
+          className='bg-neutral-800 flex flex-col w-full sm:w-3/5 md:w-4/5 lg:w-full items-stretch justify-start transition ease-in-out sm:hover:-translate-y-1 sm:hover:scale-105 rounded-2xl shadow-sm sm:hover:shadow-2xl'
           key={index}>
           <a
             href={url}
-            className='w-full md:w-2/5 flex justify-center items-center p-2 bg-neutral-700 rounded-t-2xl md:rounded-tr-none md:rounded-l-2xl'>
+            className='w-full flex justify-center items-center p-2 bg-neutral-700 rounded-t-2xl'>
             <div className='filter w-full hover:blur'>
               <div className='aspect-square relative flex-1'>
                 <Image
@@ -28,7 +28,7 @@ const projects = ({ projects }) => (
               </div>
             </div>
           </a>
-          <div className='space-y-6 w-full md:w-3/5 p-4 self-center leading-snug'>
+          <div className='space-y-6 w-full p-4 self-center leading-snug'>
             <h1 className='text-2xl font-bold text-neutral-100 group-hover:text-neutral-50'>
               {name}
             </h1>
@@ -108,10 +108,8 @@ export const getStaticProps = async () => {
     },
     {
       name: 'Xmeme',
-      description: `This is a full stack project I built while I was initially
-      exploring REST APIs. It has a Vue.js frontend which shows a list of memes
-      served from a Flask backend with an option to add, delete and modify them.
-      The backend also exposes the API documentation using Swagger-UI.`,
+      description: `This is a full stack project which shows a list of
+      modifiable memes served from a Flask backend. The backend also exposes the API documentation using Swagger-UI.`,
       stack: 'Flask, Vue.js, Bootstrap, Docker, Swagger-UI',
       url: 'https://github.com/iamsdas/xmeme-backend',
       image: 'xmeme',
