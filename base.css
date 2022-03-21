@@ -3,10 +3,11 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: #171717;
+  background-color: theme('colors.neutral.900');
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #fcd34d;
-  border-radius: 10px;
+  background-color: theme('colors.neutral.800');
+  border-radius: 6px;
+  border: 3px solid theme('colors.neutral.700');
 }

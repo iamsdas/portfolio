@@ -46,8 +46,10 @@ const Layout = ({ children }) => {
         />
       </Head>
       <Navbar />
-      {children}
-      <Footer />
+      <div className='overflow-y-auto'>
+        {children}
+        <Footer />
+      </div>
     </div>
   );
 };
