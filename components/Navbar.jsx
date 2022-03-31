@@ -44,7 +44,7 @@ const Navbar = () => {
             <a className='hover:text-amber-300'>Projects</a>
           </Link>
           <a
-            href='https://docs.google.com/document/d/1YNOaRup9abZyWiZCYfQTNSKEiIUdgCCG0hTci2BlO1M/export?format=pdf'
+            href='https://drive.google.com/file/d/1tlo-Fqb1_ICKYVPymqkaYafWiw1dKXv8/view'
             className='hover:text-amber-300'>
             Resume
           </a>

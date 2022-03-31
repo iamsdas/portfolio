@@ -28,6 +28,7 @@ export default function Home({ skills, contactInfo }) {
 export const getStaticProps = async () => {
   const skills = [
     { name: 'nextjs', url: 'https://nextjs.org/' },
+    { name: 'django', url: 'https://www.djangoproject.com/' },
     { name: 'react', url: 'https://reactjs.org/' },
     { name: 'vue', url: 'https://vuejs.org/' },
     { name: 'tailwindcss', url: 'https://tailwindcss.com/' },

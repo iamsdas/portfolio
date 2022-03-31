@@ -59,6 +59,16 @@ const rgbDataURL = (r, g, b) => {
 export const getStaticProps = async () => {
   const projects = [
     {
+      name: 'Arike',
+      description: `The is a hospital management system that caters to a system of specialized
+      medical staff tending to patients under palliative care where the primary nurses can
+      refer their patients to various specialists.`,
+      stack: 'Django, PostgreSQL, TailwindCSS, Redis, Celery',
+      url: 'https://github.com/iamsdas/arike',
+      image: 'arike',
+      rgb: [54, 65, 82],
+    },
+    {
       name: 'Todo Lists',
       description: `This is a simple todo lists web app made using Next.js. The backend
       serves GraphQL via Next.js API routes (serverless functions) using Apollo server.
