@@ -1,7 +1,7 @@
 const About = () => {
   return (
-    <div className='flex bg-neutral-800 items-center justify-around'>
-      <section className='py-12 text-amber-300 md:w-2/3 px-5 border-t-2 border-neutral-700 border-dashed border-opacity-75'>
+    <div className='flex h-screen items-center justify-around bg-neutral-800'>
+      <section className='py-12 text-amber-300 md:w-2/3 px-5'>
         <h2 className='text-4xl sm:text-5xl pb-5 font-bold uppercase text-left sm:text-center'>
           About Me
         </h2>

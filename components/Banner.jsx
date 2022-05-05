@@ -4,9 +4,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Banner = ({ contactInfo }) => (
   <section
-    className='min-h-screen bg-gradient-to-b from-neutral-900 to-neutral-800
-      font-medium uppercase text-neutral-50 text-center sm:text-left'>
-    <div className='min-h-screen flex justify-center items-center px-5'>
+    className='min-h-screen bg-neutral-900
+      font-medium uppercase text-neutral-50 text-left'>
+    <div className='min-h-screen heropattern-circuitboard-neutral-800 flex justify-center items-center px-5'>
       <div>
         <div className='text-5xl lg:text-6xl'>Hey there !!</div>
         <div className='sm:text-6xl text-5xl lg:text-7xl'>
@@ -29,7 +29,7 @@ const Banner = ({ contactInfo }) => (
             wrapper='div'
           />
         </div>
-        <div className='flex sm:justify-start items-center gap-6 sm:gap-8 justify-center pt-12 text-4xl pb-2 text-amber-300'>
+        <div className='flex justify-start items-center gap-6 sm:gap-8pt-12 text-4xl py-6 text-amber-300'>
           {contactInfo.map(({ name, url, icon }, index) => (
             <a href={url} aria-label={name} key={index}>
               <FontAwesomeIcon
