@@ -2,15 +2,15 @@ import React from 'react';
 import Image from 'next/image';
 
 const projects = ({ projects }) => (
-  <section className='bg-neutral-900 text-neutral-300 px-4 sm:px-8 md:px-16'>
+  <section className='bg-neutral-900 text-neutral-300 px-4 sm:px-8 md:px-16 lg:px-20'>
     <div className='pt-24 pb-8 font-para text-xl text-center sm:w-3/5 md:w-5/6 lg:w-3/5 mx-auto'>
       This is a showcase of some of my projects. Click an image to get further
       details about the project.
     </div>
-    <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-auto gap-6 lg:gap-14 justify-items-center items-start'>
+    <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-auto gap-6 md:gap-14 justify-items-center items-stretch'>
       {projects.map(({ name, description, stack, image, url, rgb }, index) => (
         <div
-          className='bg-neutral-800 flex flex-col w-full sm:w-3/5 md:w-4/5 lg:w-full items-stretch justify-start transition ease-in-out sm:hover:-translate-y-1 sm:hover:scale-105 rounded-2xl shadow-sm sm:hover:shadow-2xl'
+          className='bg-neutral-800 flex flex-col w-full max-w-2xl sm:w-3/5 md:w-full items-stretch justify-start transition ease-in-out sm:hover:-translate-y-1 sm:hover:scale-105 rounded-2xl shadow-sm sm:hover:shadow-2xl'
           key={index}>
           <a
             href={url}
@@ -28,12 +28,14 @@ const projects = ({ projects }) => (
               </div>
             </div>
           </a>
-          <div className='space-y-6 w-full p-4 self-center leading-snug'>
-            <h1 className='text-2xl font-bold text-neutral-100 group-hover:text-neutral-50'>
-              {name}
-            </h1>
-            <p className='text-md font-para text-neutral-50'>{description}</p>
-            <p className='text-amber-300 text-md'>{stack}</p>
+          <div className='space-y-6 w-full p-4 self-center leading-snug flex flex-col justify-end flex-1'>
+            <div className='flex-1 space-y-6'>
+              <h1 className='text-2xl font-bold text-neutral-100 group-hover:text-neutral-50'>
+                {name}
+              </h1>
+              <p className='text-md font-para text-neutral-50'>{description}</p>
+            </div>
+            <div className='text-amber-300 text-md pb-1'>{stack}</div>
           </div>
         </div>
       ))}
