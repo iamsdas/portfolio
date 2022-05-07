@@ -55,7 +55,7 @@ const Navbar = () => {
             </a>
           </Link>
           <a
-            href='https://drive.google.com/file/d/1tlo-Fqb1_ICKYVPymqkaYafWiw1dKXv8/view'
+            href='https://drive.google.com/file/d/1EkL9DQKu3BzbbupmjG7AtFSlt6_grKX0/view'
             className='underline-offset-2 hover:underline'>
             Resume
           </a>
@@ -91,7 +91,7 @@ const Navbar = () => {
           </a>
         </Link>
         <a
-          href='https://docs.google.com/document/d/1YNOaRup9abZyWiZCYfQTNSKEiIUdgCCG0hTci2BlO1M/export?format=pdf'
+          href='https://drive.google.com/file/d/1EkL9DQKu3BzbbupmjG7AtFSlt6_grKX0/view'
           className='border-neutral-700 border-t-2 pt-3'>
           Resume
         </a>

@@ -15,7 +15,7 @@ const projects = ({ projects }) => (
           <a
             href={url}
             className='w-full flex justify-center items-center p-2 bg-neutral-700 rounded-t-2xl'>
-            <div className='filter w-full hover:blur'>
+            <div className='filter w-full hover:saturate-150'>
               <div className='aspect-square relative flex-1'>
                 <Image
                   src={`/images/projects/${image}.webp`}

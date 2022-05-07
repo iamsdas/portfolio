@@ -4,7 +4,7 @@ import Image from 'next/image';
 const Skills = ({ skills }) => {
   return (
     <div className='bg-neutral-800'>
-      <section className='px-5 py-16 space-y-4 md:w-2/3 mx-auto border-t-2 border-neutral-700 border-dashed border-opacity-75'>
+      <section className='px-5 py-16 space-y-4 md:w-2/3 mx-auto border-t-2 border-neutral-500 border-dashed border-opacity-75'>
         <h2 className='text-4xl sm:text-5xl pb-5 font-bold uppercase text-amber-300 text-left sm:text-center'>
           Skills and Tech Stack
         </h2>
