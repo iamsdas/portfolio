@@ -9,10 +9,12 @@ const Skills = ({ skills }) => {
           Skills and Tech Stack
         </h2>
         <div className='text-xl sm:text-2xl text-neutral-100 font-para leading-relaxed text-left sm:text-justify pb-9'>
-          Currently using Next.js, Prisma and Tailwind for full stack web
-          development and solidity for making decentralized apps on the ethereum
-          network. Here are some intersting things that I am currently learning
-          or have learnt in the past:
+          I primarily use typescript and python for my newer projects. I have
+          worked in multiple domains and am experienced in full-stack web
+          development using various tech stacks, mobile app development using
+          react native, smart contract development using solidity, and
+          artificial intelligence using tensorflow. Here&apos;s a list of some
+          of the interesting things that I have learned in the past:
         </div>
         <div className='flex flex-wrap justify-center items-center gap-6 sm:gap-10 md:gap-12'>
           {skills.map(({ name, url }, index) => (

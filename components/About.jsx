@@ -6,13 +6,13 @@ const About = () => {
           About Me
         </h2>
         <div className='leading-relaxed text-xl sm:text-2xl text-left sm:text-justify text-neutral-100 font-para'>
-          I am a college student majoring in computer science and am a tech
-          enthusiast. I am an aspiring software developer and have experience in
-          full stack web development using multiple tech stacks, app development
-          using Flutter, and artificial intelligence using TensorFlow. I love
-          exploring the latest technologies and am currently looking into
-          blockchain. I am also an active open source contributor and am a part
-          of my college&apos;s open source society.
+          I am a final-year college student majoring in computer science and an
+          aspiring software developer with a keen interest in the web domain. I
+          have participated in and won multiple hackathons. I am also an active
+          open source contributor and am a part of my college&apos;s open source
+          society. I love exploring the latest technologies and am currently
+          looking into building performant WebAssembly modules using Rust, and
+          scaleable microservices using NestJS.
         </div>
       </section>
     </div>

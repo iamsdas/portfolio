@@ -6,7 +6,7 @@ const Banner = ({ contactInfo }) => (
   <section
     className='min-h-screen bg-neutral-900
       font-medium uppercase text-neutral-50 text-left'>
-    <div className='min-h-screen heropattern-circuitboard-neutral-800 flex justify-center items-center px-5'>
+    <div className='min-h-screen heropattern-circuitboard-neutral-800 flex justify-center items-center px-6'>
       <div>
         <div className='text-5xl lg:text-6xl'>Hey there !!</div>
         <div className='sm:text-6xl text-5xl lg:text-7xl'>

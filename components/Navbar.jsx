@@ -55,7 +55,7 @@ const Navbar = () => {
             </a>
           </Link>
           <a
-            href='https://drive.google.com/file/d/1EkL9DQKu3BzbbupmjG7AtFSlt6_grKX0/view'
+            href='https://iamsdas.hackerresume.io/UdoExO97vAseG80SqYOM'
             className='underline-offset-2 hover:underline'>
             Resume
           </a>
@@ -91,7 +91,7 @@ const Navbar = () => {
           </a>
         </Link>
         <a
-          href='https://drive.google.com/file/d/1EkL9DQKu3BzbbupmjG7AtFSlt6_grKX0/view'
+          href='https://iamsdas.hackerresume.io/UdoExO97vAseG80SqYOM'
           className='border-neutral-700 border-t-2 pt-3'>
           Resume
         </a>
