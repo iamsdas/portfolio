@@ -14,8 +14,8 @@ const projects = ({ projects }) => (
           key={index}>
           <a
             href={url}
-            className='w-full flex justify-center items-center p-2 bg-neutral-700 rounded-t-2xl'>
-            <div className='filter w-full hover:saturate-150'>
+            className='w-full flex justify-center items-center bg-neutral-600 rounded-t-2xl'>
+            <div className='filter w-full hover:saturate-150 p-2'>
               <div className='aspect-square relative flex-1'>
                 <Image
                   src={`/images/projects/${image}.webp`}
@@ -24,6 +24,14 @@ const projects = ({ projects }) => (
                   objectFit='scale-down'
                   placeholder='blur'
                   blurDataURL={rgbDataURL(...rgb)}
+                  className='z-20 m-2 p-2'
+                />
+                <Image
+                  alt={name + 'bg'}
+                  layout='fill'
+                  objectFit='cover'
+                  src={rgbDataURL(...rgb)}
+                  className='rounded-t-2xl'
                 />
               </div>
             </div>
@@ -88,7 +96,7 @@ export const getStaticProps = async () => {
         'IPFS, Chainlink, Polygon, Openzepplin, Filecoin, React.js, Phaser3',
       url: 'https://devpost.com/software/plane-rush',
       image: 'plane',
-      rgb: [215, 228, 225],
+      rgb: [194, 214, 212],
     },
     {
       name: 'Collaborative Whiteboard',
@@ -136,7 +144,7 @@ export const getStaticProps = async () => {
       stack: 'Flutter, TensorFlow, TFlite',
       url: 'https://github.com/iamsdas/Flutter-Gesture-Calculator',
       image: 'calculator',
-      rgb: [255, 255, 255],
+      rgb: [32, 151, 245],
     },
     {
       name: 'Apoyo',
@@ -147,7 +155,7 @@ export const getStaticProps = async () => {
       stack: 'Flutter, Firebase',
       url: 'https://devpost.com/software/apoyo-gxj0fe',
       image: 'apoyo',
-      rgb: [255, 255, 255],
+      rgb: [234, 65, 54],
     },
     {
       name: 'Static Pastebin Clone',

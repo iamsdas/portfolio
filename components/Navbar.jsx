@@ -14,7 +14,7 @@ const Navbar = () => {
 
   return (
     <header className='fixed inset-x-0 text-neutral-200 z-50'>
-      <div className='flex justify-between px-5 py-4 sm:py-1 items-center bg-neutral-900'>
+      <div className='flex justify-between px-5 py-4 sm:py-1 items-center bg-neutral-900 bg-opacity-80 backdrop-blur-lg'>
         <div>
           <span className='text-3xl font-extrabold sm:text-4xl text-amber-300'>
             &lt;
@@ -67,7 +67,7 @@ const Navbar = () => {
       <nav
         className={`${
           navMenu
-            ? 'flex bg-neutral-800 opacity-90 transition duration-1000 ease-in-out'
+            ? 'flex bg-neutral-800 transition duration-1000 ease-in-out bg-opacity-75 backdrop-blur-lg'
             : 'hidden'
         } flex-col gap-3 px-5 pb-5 items-stretch md:hidden text-2xl text-center font-para uppercase`}>
         <Link href='/'>
